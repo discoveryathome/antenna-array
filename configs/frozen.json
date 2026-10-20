@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-10-20T18:33:02.899483+00:00",
+  "development_results": "results/development.json",
+  "selection": "No hyperparameter variants were compared; the initial settings were retained after evaluator and development sanity checks. No tuning on held-out outcomes. Held-out means new target specifications for per-target synthesis, not a trained policy predicting weights without search.",
+  "sha256": {
+    "configs/experiment.json": "f4f2b1d0ba59c9f3fa39612ac00bebfcbc887a873a210c7b8e3d80806d7381aa",
+    "src/model.py": "eee2255003e1e386dc63a0573c07571bfd271df0dcbeceb0193b30a2461d6325",
+    "src/optimizers.py": "a554b9c14389faba1b104e586536089cba2f0c98b78b652978908e125ebf7115",
+    "src/evaluator.py": "74c1dc8cca3723b55447da654510b8943d686930de5b7288f9e8ffd920b552e8"
+  }
+}

@@ -1,0 +1,25 @@
+dev-broadside uniform None weighted dB -5.452 SLL -13.147 notch -17.493 eta 1.0 feasible True
+dev-broadside chebyshev30 None weighted dB -17.697 SLL -17.697 notch -29.994 eta 0.8616 feasible True
+dev-broadside coordinate 1729 weighted dB -13.215 SLL -13.215 notch -26.099 eta 0.97 feasible True
+dev-broadside random 1729 weighted dB -12.917 SLL -12.917 notch -25.438 eta 0.9508 feasible True
+dev-broadside random 2718 weighted dB -12.742 SLL -12.742 notch -26.994 eta 0.9553 feasible True
+dev-broadside random 3141 weighted dB -12.961 SLL -12.961 notch -25.031 eta 0.9612 feasible True
+dev-broadside slsqp 1729 weighted dB -14.592 SLL -14.592 notch -27.038 eta 0.871 feasible True
+dev-broadside slsqp 2718 weighted dB -14.703 SLL -14.703 notch -27.411 eta 0.8654 feasible True
+dev-broadside slsqp 3141 weighted dB -14.664 SLL -14.664 notch -26.927 eta 0.8709 feasible True
+dev-broadside de 1729 weighted dB -14.429 SLL -14.429 notch -26.638 eta 0.8706 feasible True
+dev-broadside de 2718 weighted dB -14.515 SLL -14.515 notch -31.735 eta 0.8622 feasible True
+dev-broadside de 3141 weighted dB -14.927 SLL -14.927 notch -27.306 eta 0.8675 feasible True
+dev-left uniform None weighted dB -7.98 SLL -13.066 notch -20.021 eta 0.9993 feasible True
+dev-left chebyshev30 None weighted dB -17.697 SLL -17.697 notch -29.994 eta 0.8616 feasible True
+dev-left coordinate 1729 weighted dB -13.135 SLL -13.135 notch -25.325 eta 0.9892 feasible True
+dev-left random 1729 weighted dB -13.087 SLL -13.087 notch -27.071 eta 0.9089 feasible True
+dev-left random 2718 weighted dB -13.18 SLL -13.18 notch -26.281 eta 0.9415 feasible True
+dev-left random 3141 weighted dB -13.196 SLL -13.196 notch -27.503 eta 0.9474 feasible True
+dev-left slsqp 1729 weighted dB -14.647 SLL -14.647 notch -26.921 eta 0.8647 feasible True
+dev-left slsqp 2718 weighted dB -14.669 SLL -14.669 notch -27.248 eta 0.8571 feasible True
+dev-left slsqp 3141 weighted dB -14.647 SLL -14.647 notch -26.921 eta 0.8647 feasible True
+dev-left de 1729 weighted dB -14.74 SLL -14.74 notch -28.3 eta 0.8783 feasible True
+dev-left de 2718 weighted dB -14.593 SLL -14.593 notch -28.285 eta 0.8751 feasible True
+dev-left de 3141 weighted dB -14.412 SLL -14.437 notch -26.453 eta 0.8817 feasible True
+Saved /Users/colkitt/discover-work/incubatedPilots/antenna-array/start-antenna-array/results/development.json seconds 40.20885608298704

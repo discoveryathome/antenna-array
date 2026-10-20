@@ -1,0 +1,32 @@
+{
+  "model_version": "isotropic-ula-phase-v1",
+  "frequency_hz": 3000000000,
+  "speed_of_light_m_s": 299792458,
+  "element_count": 16,
+  "spacing_wavelengths": 0.5,
+  "element_field_pattern": "isotropic scalar E(u)=1; full sphere axisymmetric",
+  "phase_bits": 6,
+  "guard_u": 0.15,
+  "notch_weight_power": 16.0,
+  "minimum_coherent_efficiency": 0.85,
+  "maximum_hpbw_u": 0.14,
+  "maximum_pointing_error_u": 0.015,
+  "optimizer_grid_n": 513,
+  "verification_grid_n": 10007,
+  "seeds": [1729, 2718, 3141],
+  "slsqp_starts": 4,
+  "slsqp_maxiter": 160,
+  "de_population": 64,
+  "de_generations": 160,
+  "coordinate_sweeps": 3,
+  "robustness_trials": 64,
+  "robustness_seed": 80021,
+  "targets": [
+    {"id": "dev-broadside", "split": "development", "steer_deg": 0, "notches_deg": [[18,25]]},
+    {"id": "dev-left", "split": "development", "steer_deg": -15, "notches_deg": [[8,15]]},
+    {"id": "test-right", "split": "held-out", "steer_deg": 12, "notches_deg": [[-16,-9]]},
+    {"id": "test-left", "split": "held-out", "steer_deg": -25, "notches_deg": [[5,11]]},
+    {"id": "test-scan", "split": "held-out", "steer_deg": 32, "notches_deg": [[-7,0]]},
+    {"id": "test-two-notch", "split": "held-out", "steer_deg": 0, "notches_deg": [[-28,-22],[22,28]]}
+  ]
+}
