@@ -4,8 +4,18 @@
   "selection": "No hyperparameter variants were compared; the initial settings were retained after evaluator and development sanity checks. No tuning on held-out outcomes. Held-out means new target specifications for per-target synthesis, not a trained policy predicting weights without search.",
   "sha256": {
     "configs/experiment.json": "f4f2b1d0ba59c9f3fa39612ac00bebfcbc887a873a210c7b8e3d80806d7381aa",
-    "src/model.py": "eee2255003e1e386dc63a0573c07571bfd271df0dcbeceb0193b30a2461d6325",
+    "src/model.py": "0ffd637b0d441895acb40bfbb1d2bf0e2b4249a80e38f71fe80b18b82e2c9791",
     "src/optimizers.py": "a554b9c14389faba1b104e586536089cba2f0c98b78b652978908e125ebf7115",
     "src/evaluator.py": "74c1dc8cca3723b55447da654510b8943d686930de5b7288f9e8ffd920b552e8"
-  }
+  },
+  "documentation_only_changes": [
+    {
+      "path": "src/model.py",
+      "original_sha256": "eee2255003e1e386dc63a0573c07571bfd271df0dcbeceb0193b30a2461d6325",
+      "current_sha256": "0ffd637b0d441895acb40bfbb1d2bf0e2b4249a80e38f71fe80b18b82e2c9791",
+      "changed_at": "2026-10-20T18:45:33.816846+00:00",
+      "reason": "Removed an inaccurate introductory docstring reference to stationarity penalties/derivative constraints. No executable statement changed; ASTs excluding docstrings were checked identical. Original freeze remains in commit d105d4f.",
+      "unchanged_ast_sha256": "d95791e52bc6595c2c73be2d8f099ab122f4fedf5de32fd8d4f51d401a0ea8fa"
+    }
+  ]
 }

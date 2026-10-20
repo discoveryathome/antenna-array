@@ -72,7 +72,7 @@
     },
     {
       "path": "configs/frozen.json",
-      "sha256": "ce4b3045ae6039cd4c41c0294d3a1cf693e0cacd9a6197fad214e1dc0dc120c0"
+      "sha256": "e6860cd7ba8482d24cae4c27f52c732c219537a75cc99f8e99f008bb43a2fdd7"
     },
     {
       "path": "results/candidates.json",
@@ -89,6 +89,11 @@
     {
       "path": "discover/frontier-table.json",
       "sha256": "1499c02472bcaa1a7a0de9a6882f8b1447692a4a50627f0babb2198d2b7351e0"
+    },
+    {
+      "path": "results/best-phases.csv",
+      "sha256": "0b30b30dde457fbf78bd7cf06a4e71fecc755d0fe37e98ae8276180f1ac4e808",
+      "role": "Quantized phase-bin and physical-position export"
     }
   ]
 }

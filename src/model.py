@@ -32,8 +32,9 @@ def regions(target, guard):
 class Objective:
     """Minimax weighted off-target power normalized to desired-direction power.
 
-    For discrete search, penalize coherent gain loss and nonstationarity at u0.
-    Continuous SLSQP uses explicit gain and derivative constraints instead.
+    For discrete search, penalize coherent gain loss.
+    Continuous SLSQP uses an explicit gain constraint instead.
+    Beamwidth and pointing are checked by the independent evaluator.
     """
     def __init__(self, cfg, target):
         self.cfg = cfg

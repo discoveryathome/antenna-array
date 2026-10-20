@@ -22,6 +22,17 @@ The primary score is max(global fixed-mask sidelobe power, 16 × protected-secto
 | DE + polish | 5.51 | 5.95 | 1.25 | 12/12 | 222/256 |
 | Chebyshev (amplitude reference) | 8.98 | 9.23 | 4.71 | 4/4 | 256/256 |
 
+## Best feasible local constructions
+
+These are best-of-portfolio witnesses, separate from the all-seed comparison. Directivity is the ideal scalar-model target directivity, not realized hardware gain. Excitation tables are in `results/best-phases.csv`.
+
+| Target | Method / seed | Coherent efficiency | HPBW (degrees) | HPBW (u) | Target directivity | Main-region power fraction |
+|---|---|---:|---:|---:|---:|---:|
+| test-right | de / 2718 | 0.8655 | 6.681 | 0.11407 | 13.848 | 0.8111 |
+| test-left | slsqp / 1729 | 0.8539 | 7.149 | 0.11321 | 13.662 | 0.8003 |
+| test-scan | slsqp / 1729 | 0.8626 | 7.753 | 0.11454 | 13.801 | 0.8127 |
+| test-two-notch | de / 1729 | 0.8505 | 6.400 | 0.11164 | 13.608 | 0.7865 |
+
 Improvements compare baseline **lower** bounds to candidate **upper** bounds. A negative value means degradation, including the tiny negative self-comparison caused by enclosure width. Gains are averaged over all method runs, pairing each run with the same target baseline. The four cases are not a statistical sample of all array applications.
 
 The largest nominal sidelobe/sector enclosure width across held-out witnesses was 0.00784 dB. Beamwidth and pointing checks remain numerical, and the curvature bounds use float64 rather than directed rounding.

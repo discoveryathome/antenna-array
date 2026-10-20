@@ -5,9 +5,6 @@ import os
 from pathlib import Path
 import numpy as np
 os.environ.setdefault('MPLCONFIGDIR',str(Path(__file__).resolve().parents[1]/'.mplconfig'))
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
 from .evaluator import radiation
 from .run import ROOT,digest
 METHODS=['uniform','coordinate','random','slsqp','de','chebyshev30']
@@ -42,6 +39,9 @@ def summarize(data,robust,cfg):
 
 
 def plot(data,robust,cfg):
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
     plt.rcParams.update({'font.family':'DejaVu Sans','font.size':10,'axes.spines.top':False,'axes.spines.right':False,'figure.dpi':140,'savefig.dpi':180})
     targets=[t for t in cfg['targets'] if t['split']=='held-out'];rows=data['rows']
     def get(t,method):return next(r for r in rows if r['target']==t['id'] and r['method']==method and r['seed'] in [None,cfg['seeds'][0]])
@@ -96,6 +96,20 @@ def report(s,robust,cfg):
             '|---|---:|---:|---:|---:|---:|']
     for a in s['aggregate']:
         lines.append(f"| {LABELS[a['method']]} | {a['mean_weighted_gain_db']:.2f} | {a['mean_notch_gain_db']:.2f} | {a['mean_sidelobe_gain_db']:.2f} | {a['nominal_feasible']}/{a['runs']} | {a['combined_feasible']}/{a['combined_trials']} |")
+    candidates=json.loads((ROOT/'results/candidates.json').read_text())['rows']
+    lines+=['','## Best feasible local constructions','',
+            'These are best-of-portfolio witnesses, separate from the all-seed comparison. Directivity is the ideal scalar-model target directivity, not realized hardware gain. Excitation tables are in `results/best-phases.csv`.','',
+            '| Target | Method / seed | Coherent efficiency | HPBW (degrees) | HPBW (u) | Target directivity | Main-region power fraction |',
+            '|---|---|---:|---:|---:|---:|---:|']
+    phase_rows=[]
+    for t in [t for t in cfg['targets'] if t['split']=='held-out']:
+        best=min((r for r in candidates if r['target']==t['id'] and r['class']=='phase-only' and r['metrics']['feasible']),key=lambda r:r['metrics']['weighted_peak_db_upper'])
+        m=best['metrics']
+        lines.append(f"| {t['id']} | {best['method']} / {best['seed']} | {m['coherent_efficiency']:.4f} | {m['hpbw_deg']:.3f} | {m['hpbw_u']:.5f} | {m['directivity_target']:.3f} | {m['main_region_power_fraction']:.4f} |")
+        for n,(x,phi) in enumerate(zip(best['positions_lambda'],best['phases_rad'])):
+            phase_rows.append(dict(target=t['id'],candidate=best['id'],element=n,position_lambda=x,position_m=x*cfg['speed_of_light_m_s']/cfg['frequency_hz'],phase_bin=int(round(phi*64/(2*np.pi)))%64,phase_degrees=phi*180/np.pi,amplitude=1))
+    with (ROOT/'results/best-phases.csv').open('w') as f:
+        w=csv.DictWriter(f,fieldnames=list(phase_rows[0]));w.writeheader();w.writerows(phase_rows)
     lines+=['','Improvements compare baseline **lower** bounds to candidate **upper** bounds. A negative value means degradation, including the tiny negative self-comparison caused by enclosure width. Gains are averaged over all method runs, pairing each run with the same target baseline. The four cases are not a statistical sample of all array applications.',
             '',f"The largest nominal sidelobe/sector enclosure width across held-out witnesses was {s['max_nominal_enclosure_gap_db']:.5f} dB. Beamwidth and pointing checks remain numerical, and the curvature bounds use float64 rather than directed rounding.",'',
             '## Before / after patterns','','![Before and after beam patterns](../figures/beam-patterns.png)','','![Full polar cuts](../figures/polar-patterns.png)','','![Tradeoffs and calibration stress](../figures/tradeoffs-robustness.png)','','## Calibration sensitivity','',

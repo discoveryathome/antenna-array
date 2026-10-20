@@ -1,5 +1,6 @@
 """End-to-end result audit. Full stress replay is optional but reproducible."""
 import argparse
+import csv
 import json
 import math
 from pathlib import Path
@@ -93,6 +94,21 @@ def tables(cfg,data):
         possible=[r for r in data['rows'] if r['target']==entry['target'] and r['class']=='phase-only' and r['metrics']['feasible']]
         assert entry['value']==min(r['metrics']['weighted_peak_db_upper'] for r in possible)
     assert len(table)==len([t for t in cfg['targets'] if t['split']=='held-out'])
+    with (ROOT/'results/best-phases.csv').open() as f:
+        exported=list(csv.DictReader(f))
+    assert len(exported)==len(table)*cfg['element_count']
+    expected_ids={entry['id'] for entry in table}
+    seen=set()
+    for entry in exported:
+        row=rows[entry['candidate']];i=int(entry['element'])
+        assert row['id'] in expected_ids and 0<=i<cfg['element_count']
+        assert (row['id'],i) not in seen;seen.add((row['id'],i))
+        assert entry['target']==row['target']
+        assert int(entry['phase_bin'])==int(round(row['phases_rad'][i]*(2**cfg['phase_bits'])/(2*np.pi)))%(2**cfg['phase_bits'])
+        assert float(entry['position_lambda'])==row['positions_lambda'][i]
+        assert np.isclose(float(entry['position_m']),row['positions_lambda'][i]*cfg['speed_of_light_m_s']/cfg['frequency_hz'],rtol=0,atol=1e-12)
+        assert np.isclose(float(entry['phase_degrees']),row['phases_rad'][i]*180/np.pi,rtol=0,atol=1e-10)
+        assert float(entry['amplitude'])==1
     for art in load('discover/frontier.json').get('artifacts',[]):assert digest(ROOT/art['path'])==art['sha256'],art['path']
     print('PASS frontier witnesses, best-of-local-portfolio values, summary and artifact hashes')
 

@@ -1,6 +1,6 @@
 # Frozen comparative experiment
 
-All target masks, seeds, thresholds, and search budgets are in `configs/experiment.json`. `configs/frozen.json` hashes the model, evaluator, optimizer and configuration before held-out runs; git commit d105d4f is the freeze point. Development has two targets. Held-out evaluation has four new masks, including a two-sector target. The parameters were retained after sanity checks, not selected by a broad hyperparameter sweep.
+All target masks, seeds, thresholds, and search budgets are in `configs/experiment.json`. `configs/frozen.json` hashes the model, evaluator, optimizer and configuration before held-out runs; git commit d105d4f is the freeze point. A later correction to the model docstring is recorded separately in frozen.json; ASTs excluding docstrings were identical, and no search or evaluator behavior changed. Development has two targets. Held-out evaluation has four new masks, including a two-sector target. The parameters were retained after sanity checks, not selected by a broad hyperparameter sweep.
 
 ## Methods
 

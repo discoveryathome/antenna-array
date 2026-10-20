@@ -19,7 +19,7 @@ export OMP_NUM_THREADS=1
 .venv/bin/python -m src.check
 ```
 
-Expected: **8 tests passed**, and PASS lines for 72 nominal witnesses, independent uniform-theta grids, schema/track checks, 192 deterministic stress-trial replays, all recorded stress summaries/bounds, frontier values and artifact hashes. Verification is normally under one minute after dependencies/font cache are ready. All 6,144 stress trials can be replayed with:
+Expected: **8 tests passed**, and PASS lines for 72 nominal witnesses, independent uniform-theta grids, schema/track checks, 192 deterministic stress-trial replays, all recorded stress summaries/bounds, frontier values and artifact hashes. Verification is normally under one minute after dependencies are installed. All 6,144 stress trials can be replayed with:
 
 ```bash
 .venv/bin/python -m src.check --full-stress
@@ -56,6 +56,7 @@ The two intelligent methods are multistart epigraph SLSQP with analytic derivati
 * [Results](docs/RESULTS.md): all-seed comparisons, negative case, calibration failures, engineering interpretation and discovery-yield assessment.
 * [Polar plots](figures/polar-patterns.png), [before/after beams](figures/beam-patterns.png), [tradeoff/stress plots](figures/tradeoffs-robustness.png), each also available as SVG.
 * `results/candidates.json`: every saved phase/amplitude configuration and authoritative nominal metric.
+* `results/best-phases.csv`: verified phase bins and physical positions for the best feasible witnesses.
 * `results/metrics.csv`, `results/summary.json`, `results/robustness.json`: tabular metrics, comparisons and all stress trials.
 * [Local frontier](discover/frontier.json): best feasible phase-only witnesses found on this benchmark, with sources and reproducible checks.
 * [Agent entry](AGENTS.md) and [project guide](DISCOVERY.md): weighted tasks, credit, review and local coordination.
