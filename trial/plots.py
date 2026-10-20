@@ -11,6 +11,7 @@ OUT=Path('trial/figures');OUT.mkdir(exist_ok=True)
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'axes.spines.top':False,'axes.spines.right':False,'figure.facecolor':'#f7f9fc','axes.facecolor':'#f7f9fc','text.color':'#14243b','savefig.facecolor':'#f7f9fc'})
 def save(fig,name):
     fig.savefig(OUT/(name+'.png'),dpi=160,bbox_inches='tight');fig.savefig(OUT/(name+'.svg'),bbox_inches='tight');plt.close(fig)
+    svg=OUT/(name+'.svg');svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
 def main():
     a=json.loads(Path('trial/analysis.json').read_text());sat=json.loads(Path('trial/saturation.json').read_text());bench=json.loads(Path('trial/benchmark.json').read_text())['rows'];stress=json.loads(Path('trial/robustness.json').read_text())['rows'];plan=json.loads(Path('trial/plan.json').read_text())
     fig,axs=plt.subplots(2,2,figsize=(12,7),layout='constrained')

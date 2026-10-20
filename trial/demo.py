@@ -40,6 +40,7 @@ def main():
         return fig
     for k in range(4):plt.close(make(k))
     fig=make(3,False);fig.savefig(OUT/'before-after.svg',bbox_inches='tight');fig.savefig(OUT/'before-after.png',dpi=160,bbox_inches='tight');plt.close(fig)
+    svg=OUT/'before-after.svg';svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
     # Discrete held frames only; no interpolated, unevaluated phase settings.
     frames=[Image.open(OUT/f'demo-{k}.png').convert('RGB') for k in range(4)]
     frames[0].save(OUT/'contributor-progress.gif',save_all=True,append_images=frames[1:],duration=[2200,2800,2200,4000],loop=0)
