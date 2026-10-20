@@ -1,4 +1,4 @@
-# Antenna array beam-pattern optimization — LOCAL pilot
+# Antenna array beam-pattern optimization — research pilot
 
 **Contributor trial (2026-10-20):** [Featured-pilot assessment](trial/ASSESSMENT.md), [animated progress](trial/figures/contributor-progress.gif), and [trial reproduction instructions](trial/README.md). The original baseline and frontier described below remain unchanged.
 
@@ -65,4 +65,4 @@ The two intelligent methods are multistart epigraph SLSQP with analytic derivati
 
 The evaluator uses a grid distinct from the optimizer and a curvature bound to enclose peaks between samples. A separate uniform-angle grid audits every stored witness. The largest held-out enclosure gap was 0.00784 dB. These float64 bounds are author-checked simulation evidence, not directed-rounding certificates. Half-power width and pointing are numerical measurements.
 
-**Status:** local proposal, no GitHub repository, no posting, no hub consent, no consenting maintainer. Donor intake is paused. The schema's UNASSIGNED maintainer sentinel and local URN explicitly represent that state. The verifier and frontier deserve special review because contributors will rely on them; review capacity will set the pace. Original artifacts use MIT; source papers retain their licenses.
+**Status:** private pilot repository at [discoveryathome/antenna-array](https://github.com/discoveryathome/antenna-array). No Discovery@Home hub submission or consent; no consenting maintainer. Donor intake remains paused. The schema's UNASSIGNED maintainer sentinel is not an appointment. Historical trial reports describe the local-only state when those experiments were run. The verifier and frontier deserve special review because contributors will rely on them; review capacity will set the pace. Original artifacts use MIT; source papers retain their licenses.

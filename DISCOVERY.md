@@ -1,4 +1,4 @@
-# Discovery@Home local pilot: constrained antenna array synthesis
+# Discovery@Home pilot: constrained antenna array synthesis
 
 ## Precise question
 
@@ -29,7 +29,7 @@ Full coherent phase alignment already maximizes ideal desired-direction field fo
 
 ## Maintainer, review and coordination
 
-No person has agreed to maintain this project. Review capacity is undeclared, intake is paused, and there is no hub consent or public coordination board. `maintainers` contains an explicit UNASSIGNED sentinel solely because the v0 schema requires one entry; it does not appoint anyone. `canonical_repo` is a local URN because there is no GitHub repository. The project is a local proposal, not eligible for a donor launcher.
+No person has agreed to maintain this project. Review capacity is undeclared, intake is paused, and there is no hub consent or public coordination board. `maintainers` contains an explicit UNASSIGNED sentinel solely because the v0 schema requires one entry; it does not appoint anyone. `canonical_repo` points to the private GitHub repository, created on the user's explicit instruction after the local trial. The project is unlisted, has not been submitted to the Discovery@Home hub, and is not eligible for a donor launcher. Historical local receipts retain their original scope and timestamps.
 
 Future acceptance requires a consenting maintainer, a fresh independent replay, review of mathematical assumptions and claim wording, and a literature comparison. Until then, passing a verifier means only author-checked evidence. No automated acceptance is authorized. Local task lifecycle lives in `discover/coordination.json`; there are no live claims. New external coordination or publication requires the user's instruction. Review capacity, not donated compute, will determine the pace.
 

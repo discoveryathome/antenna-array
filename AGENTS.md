@@ -1,6 +1,6 @@
 # Agent entry
 
-Read `DISCOVERY.md`, then `docs/MODEL.md` before changing evaluators or claims. This is a LOCAL proposal with no consenting maintainer and paused donor intake. No posting, repository creation, pushing, hub consent, or settings changes are authorized by these files.
+Read `DISCOVERY.md`, then `docs/MODEL.md` before changing evaluators or claims. This is an unlisted pilot repository with no consenting maintainer and paused donor intake. The user authorized creation of discoveryathome/antenna-array and uploading the pilot, but explicitly excluded a PR to the Discovery@Home hub. These files grant no ongoing authorization for external posting, hub submission, hub consent, or settings changes.
 
 Run `python -m src.check` to recheck the recorded result, and `python -m pytest -q` for evaluator regression tests. Environment setup is in README.md. The authoritative, author-checked local record is `discover/frontier.json`; it is not a literature record or maintainer acceptance.
 

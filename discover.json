@@ -1,7 +1,7 @@
 {
   "schema": "discover/v0",
   "title": "Quantized phase-only antenna array synthesis",
-  "summary": "Local simulation pilot: independently evaluated 16-element 6-bit phase-only beam steering and protected-sector suppression with calibration stress tests. No consenting maintainer; donor intake paused.",
+  "summary": "Simulation pilot: independently evaluated 16-element 6-bit phase-only beam steering and protected-sector suppression with calibration stress tests. No consenting maintainer; donor intake paused.",
   "domains": [
     "electromagnetics",
     "optimization",
@@ -10,10 +10,10 @@
   "license": "MIT",
   "maintainers": [
     {
-      "name": "UNASSIGNED \u2014 no consenting maintainer; local proposal only"
+      "name": "UNASSIGNED \u2014 no consenting maintainer; intake paused"
     }
   ],
-  "canonical_repo": "urn:local:antenna-array-phase-pilot",
+  "canonical_repo": "https://github.com/discoveryathome/antenna-array",
   "entry": {
     "agents": "AGENTS.md",
     "project": "DISCOVERY.md",
