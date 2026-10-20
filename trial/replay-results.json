@@ -1,0 +1,42 @@
+{
+  "target": "fresh-01",
+  "seed": 901,
+  "rows": [
+    {
+      "method": "de160",
+      "phase_array_exact": true,
+      "objective_calls": 10338
+    },
+    {
+      "method": "de200",
+      "phase_array_exact": true,
+      "objective_calls": 12898
+    },
+    {
+      "method": "de640",
+      "phase_array_exact": true,
+      "objective_calls": 41058
+    },
+    {
+      "method": "margin-de160",
+      "phase_array_exact": true,
+      "objective_calls": 10338
+    },
+    {
+      "method": "margin-de200",
+      "phase_array_exact": true,
+      "objective_calls": 12898
+    },
+    {
+      "method": "hybrid",
+      "phase_array_exact": true,
+      "objective_calls": 12453
+    },
+    {
+      "method": "margin-hybrid",
+      "phase_array_exact": true,
+      "objective_calls": 12457
+    }
+  ],
+  "seconds": 9.030418000067584
+}

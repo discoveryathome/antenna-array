@@ -1,0 +1,98 @@
+test-right 5001 [('more-de', -14.8391), ('more-de-hybrid', -14.9613)]
+test-right 5002 [('more-de', -14.4508), ('more-de-hybrid', -14.4854)]
+test-right 5003 [('more-de', -14.6743), ('more-de-hybrid', -14.9613)]
+test-right 5004 [('more-de', -14.8726), ('more-de-hybrid', -14.9613)]
+test-right 5005 [('more-de', -14.2086), ('more-de-hybrid', -14.7489)]
+test-right 5006 [('more-de', -14.5224), ('more-de-hybrid', -14.656)]
+test-right 5007 [('more-de', -14.4703), ('more-de-hybrid', -14.7591)]
+test-right 5008 [('more-de', -14.8262), ('more-de-hybrid', -14.9613)]
+test-right 5009 [('more-de', -14.6805), ('more-de-hybrid', -14.9613)]
+test-right 5010 [('more-de', -14.8049), ('more-de-hybrid', -14.9613)]
+test-right 5011 [('more-de', -14.5603), ('more-de-hybrid', -14.6162)]
+test-right 5012 [('more-de', -14.888), ('more-de-hybrid', -14.9613)]
+test-right 5013 [('more-de', -14.2762), ('more-de-hybrid', -14.3681)]
+test-right 5014 [('more-de', -14.8385), ('more-de-hybrid', -14.9613)]
+test-right 5015 [('more-de', -14.8627), ('more-de-hybrid', -14.9613)]
+test-right 5016 [('more-de', -14.8507), ('more-de-hybrid', -14.9613)]
+test-right 5017 [('more-de', -14.7915), ('more-de-hybrid', -14.9084)]
+test-right 5018 [('more-de', -14.6323), ('more-de-hybrid', -14.9613)]
+test-right 5019 [('more-de', -14.7394), ('more-de-hybrid', -14.9084)]
+test-right 5020 [('more-de', -14.5221), ('more-de-hybrid', -14.8783)]
+test-left 5001 [('more-de', -14.713), ('more-de-hybrid', -14.8866)]
+test-left 5002 [('more-de', -14.7903), ('more-de-hybrid', -14.8866)]
+test-left 5003 [('more-de', -14.5837), ('more-de-hybrid', -14.7528)]
+test-left 5004 [('more-de', -14.6491), ('more-de-hybrid', -14.8818)]
+test-left 5005 [('more-de', -14.8233), ('more-de-hybrid', -14.8866)]
+test-left 5006 [('more-de', -14.6968), ('more-de-hybrid', -14.7162)]
+test-left 5007 [('more-de', -14.8417), ('more-de-hybrid', -14.9478)]
+test-left 5008 [('more-de', -14.8417), ('more-de-hybrid', -14.8866)]
+test-left 5009 [('more-de', -14.4344), ('more-de-hybrid', -14.7162)]
+test-left 5010 [('more-de', -14.4808), ('more-de-hybrid', -14.7607)]
+test-left 5011 [('more-de', -14.5008), ('more-de-hybrid', -14.7162)]
+test-left 5012 [('more-de', -14.8604), ('more-de-hybrid', -14.8866)]
+test-left 5013 [('more-de', -14.5997), ('more-de-hybrid', -14.7162)]
+test-left 5014 [('more-de', -14.6747), ('more-de-hybrid', -14.8866)]
+test-left 5015 [('more-de', -14.7468), ('more-de-hybrid', -14.8818)]
+test-left 5016 [('more-de', -14.6292), ('more-de-hybrid', -14.7162)]
+test-left 5017 [('more-de', -14.5711), ('more-de-hybrid', -14.7162)]
+test-left 5018 [('more-de', -14.5992), ('more-de-hybrid', -14.7162)]
+test-left 5019 [('more-de', -14.83), ('more-de-hybrid', -14.8866)]
+test-left 5020 [('more-de', -14.7504), ('more-de-hybrid', -14.7504)]
+test-scan 5001 [('more-de', -14.6134), ('more-de-hybrid', -14.9255)]
+test-scan 5002 [('more-de', -14.6682), ('more-de-hybrid', -14.7998)]
+test-scan 5003 [('more-de', -14.9533), ('more-de-hybrid', -14.9533)]
+test-scan 5004 [('more-de', -14.679), ('more-de-hybrid', -14.707)]
+test-scan 5005 [('more-de', -14.7491), ('more-de-hybrid', -14.7998)]
+test-scan 5006 [('more-de', -14.6839), ('more-de-hybrid', -14.7998)]
+test-scan 5007 [('more-de', -14.5907), ('more-de-hybrid', -14.6417)]
+test-scan 5008 [('more-de', -14.5491), ('more-de-hybrid', -14.707)]
+test-scan 5009 [('more-de', -14.687), ('more-de-hybrid', -14.962)]
+test-scan 5010 [('more-de', -14.7422), ('more-de-hybrid', -14.7422)]
+test-scan 5011 [('more-de', -14.634), ('more-de-hybrid', -14.9657)]
+test-scan 5012 [('more-de', -14.895), ('more-de-hybrid', -14.9149)]
+test-scan 5013 [('more-de', -14.7944), ('more-de-hybrid', -14.7998)]
+test-scan 5014 [('more-de', -14.5887), ('more-de-hybrid', -14.7998)]
+test-scan 5015 [('more-de', -14.7701), ('more-de-hybrid', -14.7998)]
+test-scan 5016 [('more-de', -14.6565), ('more-de-hybrid', -14.7998)]
+test-scan 5017 [('more-de', -14.921), ('more-de-hybrid', -14.921)]
+test-scan 5018 [('more-de', -14.6727), ('more-de-hybrid', -14.6727)]
+test-scan 5019 [('more-de', -14.596), ('more-de-hybrid', -14.707)]
+test-scan 5020 [('more-de', -14.6723), ('more-de-hybrid', -14.707)]
+test-two-notch 5001 [('more-de', -12.9602), ('more-de-hybrid', -13.2088)]
+test-two-notch 5002 [('more-de', -13.1061), ('more-de-hybrid', -13.2088)]
+test-two-notch 5003 [('more-de', -13.1014), ('more-de-hybrid', -13.6365)]
+test-two-notch 5004 [('more-de', -12.5679), ('more-de-hybrid', -13.4209)]
+test-two-notch 5005 [('more-de', -13.2626), ('more-de-hybrid', -13.5087)]
+test-two-notch 5006 [('more-de', -13.1201), ('more-de-hybrid', -13.6365)]
+test-two-notch 5007 [('more-de', -12.4965), ('more-de-hybrid', -13.3082)]
+test-two-notch 5008 [('more-de', -13.4261), ('more-de-hybrid', -13.6365)]
+test-two-notch 5009 [('more-de', -13.3914), ('more-de-hybrid', -13.6365)]
+test-two-notch 5010 [('more-de', -13.0051), ('more-de-hybrid', -13.6365)]
+test-two-notch 5011 [('more-de', -13.1281), ('more-de-hybrid', -13.6365)]
+test-two-notch 5012 [('more-de', -13.3752), ('more-de-hybrid', -13.6365)]
+test-two-notch 5013 [('more-de', -13.2694), ('more-de-hybrid', -13.6365)]
+test-two-notch 5014 [('more-de', -12.7999), ('more-de-hybrid', -12.9632)]
+test-two-notch 5015 [('more-de', -13.1262), ('more-de-hybrid', -13.2088)]
+test-two-notch 5016 [('more-de', -13.4013), ('more-de-hybrid', -13.6365)]
+test-two-notch 5017 [('more-de', -13.2617), ('more-de-hybrid', -13.6365)]
+test-two-notch 5018 [('more-de', -13.2379), ('more-de-hybrid', -13.2379)]
+test-two-notch 5019 [('more-de', -13.4031), ('more-de-hybrid', -13.6365)]
+test-two-notch 5020 [('more-de', -13.2694), ('more-de-hybrid', -13.6365)]
+      309.66 real        64.66 user         2.08 sys
+            79118336  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               13626  page reclaims
+                 117  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 466  voluntary context switches
+              224800  involuntary context switches
+        297380291674  instructions retired
+        135849176932  cycles elapsed
+            58049040  peak memory footprint

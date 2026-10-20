@@ -1,0 +1,11 @@
+{
+  "frozen_hashes": "pass",
+  "witnesses_checked": 640,
+  "independent_theta_points": 20011,
+  "max_peak_enclosure_gap_db": 0.017135875323937483,
+  "nominal_infeasible_ids": [],
+  "tampering_rejections": 3,
+  "stress_records": 84,
+  "stress_metrics_replayed": 5376,
+  "seconds": 157.6194317920599
+}

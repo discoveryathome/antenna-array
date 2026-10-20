@@ -1,0 +1,16 @@
+{
+  "frozen_at": "2026-10-20T19:03:18.298596+00:00",
+  "files": {
+    "trial/search.py": "57dd21a87f9ff2a8c48aa24d1b80cd0f1d0d59584baef2e18744479adca2a8b5",
+    "trial/coherence.py": "44bb43c778da86c99383b2752cd5fbc11733871dd70d87128154907b4231ecef",
+    "trial/benchmark.py": "1057485abebbc9673b0e445069592ce9ab97d387525481f2c4d12dbf2f2b709e",
+    "trial/plan.json": "6623ec4b71ebbe10d768059dda8a6af7ee385fdbdedd01ac4c827591ac4405d3",
+    "src/model.py": "0ffd637b0d441895acb40bfbb1d2bf0e2b4249a80e38f71fe80b18b82e2c9791",
+    "src/optimizers.py": "a554b9c14389faba1b104e586536089cba2f0c98b78b652978908e125ebf7115",
+    "src/evaluator.py": "74c1dc8cca3723b55447da654510b8943d686930de5b7288f9e8ffd920b552e8"
+  },
+  "development": "Original four held-out cases reused as development; exploration.json records every attempt. Fresh 12 targets have not been evaluated.",
+  "methods": "DE160, DE200 (approximately matched objective-call budget), DE640 (4x generations); DE160 + warm SLSQP + exact gauge rounding + paired moves. Margin versions use an analytical nominal-gain constraint. Incumbent is retained when refinement does not improve search score.",
+  "hardware": "Apple M2, 8 logical CPUs, 24 GiB RAM; one process and BLAS thread",
+  "budget": "5 seeds x 12 fresh targets; 7 reported methods, with shared base DE runs charged to each hybrid. Stop after this fixed benchmark; do not tune based on outcomes."
+}

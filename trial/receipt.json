@@ -1,0 +1,32 @@
+{
+  "started_at": "2026-10-20T18:55:53+00:00",
+  "scientific_trial_finished_at": "2026-10-20T19:27:49.581105+00:00",
+  "elapsed_minutes": 31.943018416666668,
+  "planned_ceiling_minutes": 45,
+  "scope": "Local contributor search, robustness, verification and suitability assessment; packaging follows this timestamp",
+  "base": "ad3e034105b1d88610a22ba1fb1acd1547757b40",
+  "actor": "Same Codex assistant that authored the starter; no independent-person review or blind onboarding test",
+  "mode": "LOCAL",
+  "published": false,
+  "frontier_promoted": false,
+  "hardware": {
+    "cpu": "Apple M2",
+    "logical_cpus": 8,
+    "memory_gib": 24,
+    "gpu_used": false,
+    "blas_threads_per_process": 1,
+    "benchmark_max_rss_bytes": 79183872,
+    "benchmark_cpu_seconds": 304.9,
+    "concurrent_host_work": true
+  },
+  "checks": {
+    "tests": 12,
+    "nominal_records": 640,
+    "stress_records_recomputed": 5376,
+    "adversarial_vectors_recomputed": 84,
+    "seeded_methods_replayed": 7,
+    "original_baseline_check": "pass",
+    "frozen_hashes": "pass"
+  },
+  "evidence_level": "author-checked"
+}

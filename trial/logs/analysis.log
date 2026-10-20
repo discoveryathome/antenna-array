@@ -1,0 +1,607 @@
+{
+  "methods": {
+    "de160": {
+      "mean_weighted_db": -13.776863823091697,
+      "mean_sidelobe_db": -13.849828114189803,
+      "mean_notch_db": -26.211354867293537,
+      "mean_nominal_eta": 0.8626677049613053,
+      "nominal_feasible": 60,
+      "min_gain_bound": 0.7944095368493502,
+      "median_objective_calls": 10338.0,
+      "mean_seconds": 1.7252079596937013,
+      "stress_feasible": 684,
+      "stress_total": 768,
+      "adversarial_gain_failures": 9,
+      "minimum_adversarial_eta": 0.8228861902749377,
+      "mean_worst_sample_score_degradation_db": 1.804336520454762,
+      "max_worst_sample_score_degradation_db": 2.974766010216083,
+      "random_failure_causes": {
+        "coherent_efficiency": 84,
+        "beamwidth": 0,
+        "pointing": 0
+      }
+    },
+    "de200": {
+      "mean_weighted_db": -13.828428270530845,
+      "mean_sidelobe_db": -13.888314448897694,
+      "mean_notch_db": -26.384154141939288,
+      "mean_nominal_eta": 0.8621967941090223,
+      "nominal_feasible": 60,
+      "min_gain_bound": 0.7941471128348205,
+      "median_objective_calls": 12898.0,
+      "mean_seconds": 2.149434355526076,
+      "stress_feasible": 655,
+      "stress_total": 768,
+      "adversarial_gain_failures": 9,
+      "minimum_adversarial_eta": 0.8228861902749377,
+      "mean_worst_sample_score_degradation_db": 1.7353796095330682,
+      "max_worst_sample_score_degradation_db": 3.0619055655942518,
+      "random_failure_causes": {
+        "coherent_efficiency": 113,
+        "beamwidth": 0,
+        "pointing": 0
+      }
+    },
+    "hybrid": {
+      "mean_weighted_db": -13.960489340894117,
+      "mean_sidelobe_db": -14.009661568008934,
+      "mean_notch_db": -26.413420344024367,
+      "mean_nominal_eta": 0.8576814245761386,
+      "nominal_feasible": 60,
+      "min_gain_bound": 0.7941798945307633,
+      "median_objective_calls": 12476.0,
+      "mean_seconds": 2.1502017138681064,
+      "stress_feasible": 666,
+      "stress_total": 768,
+      "adversarial_gain_failures": 12,
+      "minimum_adversarial_eta": 0.8246543304965418,
+      "mean_worst_sample_score_degradation_db": 1.8192907284648776,
+      "max_worst_sample_score_degradation_db": 2.9795174302251635,
+      "random_failure_causes": {
+        "coherent_efficiency": 102,
+        "beamwidth": 0,
+        "pointing": 0
+      }
+    },
+    "de640": {
+      "mean_weighted_db": -13.926941395504729,
+      "mean_sidelobe_db": -13.970734297268406,
+      "mean_notch_db": -26.426945104165238,
+      "mean_nominal_eta": 0.8598876808465881,
+      "nominal_feasible": 60,
+      "min_gain_bound": 0.7938488436523498,
+      "median_objective_calls": 41058.0,
+      "mean_seconds": 6.3262222784551945,
+      "stress_feasible": 670,
+      "stress_total": 768,
+      "adversarial_gain_failures": 10,
+      "minimum_adversarial_eta": 0.8228931833468945,
+      "mean_worst_sample_score_degradation_db": 1.8172485921715857,
+      "max_worst_sample_score_degradation_db": 2.5276784848138387,
+      "random_failure_causes": {
+        "coherent_efficiency": 98,
+        "beamwidth": 0,
+        "pointing": 0
+      }
+    },
+    "margin-de160": {
+      "mean_weighted_db": -12.975846985758789,
+      "mean_sidelobe_db": -13.374871534542006,
+      "mean_notch_db": -25.405143201047686,
+      "mean_nominal_eta": 0.9037884133678038,
+      "nominal_feasible": 60,
+      "min_gain_bound": 0.8559238791959888,
+      "median_objective_calls": 10338.0,
+      "mean_seconds": 1.6214302284817677,
+      "stress_feasible": 768,
+      "stress_total": 768,
+      "adversarial_gain_failures": 0,
+      "minimum_adversarial_eta": 0.8787808991180519,
+      "mean_worst_sample_score_degradation_db": 1.5362739910461853,
+      "max_worst_sample_score_degradation_db": 2.258843502463371,
+      "random_failure_causes": {
+        "coherent_efficiency": 0,
+        "beamwidth": 0,
+        "pointing": 0
+      }
+    },
+    "margin-de200": {
+      "mean_weighted_db": -13.017678006683393,
+      "mean_sidelobe_db": -13.38165784307019,
+      "mean_notch_db": -25.42726534188362,
+      "mean_nominal_eta": 0.9029584921181751,
+      "nominal_feasible": 60,
+      "min_gain_bound": 0.8558386710572957,
+      "median_objective_calls": 12898.0,
+      "mean_seconds": 2.0130801895594534,
+      "stress_feasible": 768,
+      "stress_total": 768,
+      "adversarial_gain_failures": 0,
+      "minimum_adversarial_eta": 0.8787808991180519,
+      "mean_worst_sample_score_degradation_db": 1.5345968422349154,
+      "max_worst_sample_score_degradation_db": 2.258843502463371,
+      "random_failure_causes": {
+        "coherent_efficiency": 0,
+        "beamwidth": 0,
+        "pointing": 0
+      }
+    },
+    "margin-hybrid": {
+      "mean_weighted_db": -13.116245237297926,
+      "mean_sidelobe_db": -13.489652371060034,
+      "mean_notch_db": -25.264647419673427,
+      "mean_nominal_eta": 0.9035527439799885,
+      "nominal_feasible": 60,
+      "min_gain_bound": 0.8559238791959888,
+      "median_objective_calls": 12489.0,
+      "mean_seconds": 1.9671900603900818,
+      "stress_feasible": 768,
+      "stress_total": 768,
+      "adversarial_gain_failures": 0,
+      "minimum_adversarial_eta": 0.8790584397873129,
+      "mean_worst_sample_score_degradation_db": 1.9304912270508268,
+      "max_worst_sample_score_degradation_db": 2.839757928099324,
+      "random_failure_causes": {
+        "coherent_efficiency": 0,
+        "beamwidth": 0,
+        "pointing": 0
+      }
+    }
+  },
+  "comparisons": {
+    "hybrid vs de160": {
+      "mean_gain_db": 0.18362551780241906,
+      "median_case_gain_db": 0.12322963970306322,
+      "range_case_gain_db": [
+        0.04826155286914471,
+        0.42132657457258665
+      ],
+      "targets_positive": 12,
+      "targets_above_quarter_db": 5,
+      "bounded_paired_wins": 49,
+      "bounded_paired_losses": 0,
+      "overlapping_enclosures": 11,
+      "group_mean_gain_db": {
+        "symmetric-u": 0.28081599095929416,
+        "single-sector": 0.08643504464554391
+      },
+      "per_target": [
+        {
+          "target": "fresh-01",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.26464804308642903
+        },
+        {
+          "target": "fresh-02",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.2521362746482815
+        },
+        {
+          "target": "fresh-03",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.051770856245574134
+        },
+        {
+          "target": "fresh-04",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.39936376929738915
+        },
+        {
+          "target": "fresh-05",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.42132657457258665
+        },
+        {
+          "target": "fresh-06",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.29565042790550466
+        },
+        {
+          "target": "fresh-07",
+          "group": "single-sector",
+          "mean_gain_db": 0.09483292404121144
+        },
+        {
+          "target": "fresh-08",
+          "group": "single-sector",
+          "mean_gain_db": 0.11481952723512165
+        },
+        {
+          "target": "fresh-09",
+          "group": "single-sector",
+          "mean_gain_db": 0.07211279454308972
+        },
+        {
+          "target": "fresh-10",
+          "group": "single-sector",
+          "mean_gain_db": 0.05694371701369114
+        },
+        {
+          "target": "fresh-11",
+          "group": "single-sector",
+          "mean_gain_db": 0.04826155286914471
+        },
+        {
+          "target": "fresh-12",
+          "group": "single-sector",
+          "mean_gain_db": 0.1316397521710048
+        }
+      ]
+    },
+    "hybrid vs de200": {
+      "mean_gain_db": 0.13206107036327114,
+      "median_case_gain_db": 0.1024877303369589,
+      "range_case_gain_db": [
+        -0.020526786597786284,
+        0.34227062258875873
+      ],
+      "targets_positive": 11,
+      "targets_above_quarter_db": 2,
+      "bounded_paired_wins": 43,
+      "bounded_paired_losses": 12,
+      "overlapping_enclosures": 5,
+      "group_mean_gain_db": {
+        "symmetric-u": 0.19822491738148765,
+        "single-sector": 0.06589722334505464
+      },
+      "per_target": [
+        {
+          "target": "fresh-01",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.2037782666921757
+        },
+        {
+          "target": "fresh-02",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.17501792913068606
+        },
+        {
+          "target": "fresh-03",
+          "group": "symmetric-u",
+          "mean_gain_db": -0.020526786597786284
+        },
+        {
+          "target": "fresh-04",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.34227062258875873
+        },
+        {
+          "target": "fresh-05",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.23543820496043716
+        },
+        {
+          "target": "fresh-06",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.2533712675146546
+        },
+        {
+          "target": "fresh-07",
+          "group": "single-sector",
+          "mean_gain_db": 0.08750853234259104
+        },
+        {
+          "target": "fresh-08",
+          "group": "single-sector",
+          "mean_gain_db": 0.06408011183448395
+        },
+        {
+          "target": "fresh-09",
+          "group": "single-sector",
+          "mean_gain_db": 0.061569722396670204
+        },
+        {
+          "target": "fresh-10",
+          "group": "single-sector",
+          "mean_gain_db": 0.026063117781094648
+        },
+        {
+          "target": "fresh-11",
+          "group": "single-sector",
+          "mean_gain_db": 0.03869492738416121
+        },
+        {
+          "target": "fresh-12",
+          "group": "single-sector",
+          "mean_gain_db": 0.11746692833132677
+        }
+      ]
+    },
+    "hybrid vs de640": {
+      "mean_gain_db": 0.03354794538938828,
+      "median_case_gain_db": 0.009921429538928628,
+      "range_case_gain_db": [
+        -0.09141242474079866,
+        0.2643754712316909
+      ],
+      "targets_positive": 7,
+      "targets_above_quarter_db": 1,
+      "bounded_paired_wins": 21,
+      "bounded_paired_losses": 37,
+      "overlapping_enclosures": 2,
+      "group_mean_gain_db": {
+        "symmetric-u": 0.07512441390836429,
+        "single-sector": -0.00802852312958772
+      },
+      "per_target": [
+        {
+          "target": "fresh-01",
+          "group": "symmetric-u",
+          "mean_gain_db": -0.0023358611201707903
+        },
+        {
+          "target": "fresh-02",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.09225389637279342
+        },
+        {
+          "target": "fresh-03",
+          "group": "symmetric-u",
+          "mean_gain_db": -0.09141242474079866
+        },
+        {
+          "target": "fresh-04",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.2643754712316909
+        },
+        {
+          "target": "fresh-05",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.12518054526111122
+        },
+        {
+          "target": "fresh-06",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.06268485644555959
+        },
+        {
+          "target": "fresh-07",
+          "group": "single-sector",
+          "mean_gain_db": 0.0022997450124265127
+        },
+        {
+          "target": "fresh-08",
+          "group": "single-sector",
+          "mean_gain_db": -0.02564819706947752
+        },
+        {
+          "target": "fresh-09",
+          "group": "single-sector",
+          "mean_gain_db": 0.017543114065430743
+        },
+        {
+          "target": "fresh-10",
+          "group": "single-sector",
+          "mean_gain_db": -0.06700979506752702
+        },
+        {
+          "target": "fresh-11",
+          "group": "single-sector",
+          "mean_gain_db": -0.018355928881751638
+        },
+        {
+          "target": "fresh-12",
+          "group": "single-sector",
+          "mean_gain_db": 0.0429999231633726
+        }
+      ]
+    },
+    "margin-hybrid vs margin-de160": {
+      "mean_gain_db": 0.14039825153913785,
+      "median_case_gain_db": 0.13691257657438866,
+      "range_case_gain_db": [
+        0.009460938752803827,
+        0.4246451927492739
+      ],
+      "targets_positive": 12,
+      "targets_above_quarter_db": 1,
+      "bounded_paired_wins": 51,
+      "bounded_paired_losses": 0,
+      "overlapping_enclosures": 9,
+      "group_mean_gain_db": {
+        "symmetric-u": 0.20325681435423137,
+        "single-sector": 0.07753968872404436
+      },
+      "per_target": [
+        {
+          "target": "fresh-01",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.12704545065662814
+        },
+        {
+          "target": "fresh-02",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.1493885680590054
+        },
+        {
+          "target": "fresh-03",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.1895279948264708
+        },
+        {
+          "target": "fresh-04",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.4246451927492739
+        },
+        {
+          "target": "fresh-05",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.15995838294355771
+        },
+        {
+          "target": "fresh-06",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.16897529689045215
+        },
+        {
+          "target": "fresh-07",
+          "group": "single-sector",
+          "mean_gain_db": 0.09502601758777729
+        },
+        {
+          "target": "fresh-08",
+          "group": "single-sector",
+          "mean_gain_db": 0.04773187171684299
+        },
+        {
+          "target": "fresh-09",
+          "group": "single-sector",
+          "mean_gain_db": 0.06697163516688143
+        },
+        {
+          "target": "fresh-10",
+          "group": "single-sector",
+          "mean_gain_db": 0.009460938752803827
+        },
+        {
+          "target": "fresh-11",
+          "group": "single-sector",
+          "mean_gain_db": 0.14677970249214917
+        },
+        {
+          "target": "fresh-12",
+          "group": "single-sector",
+          "mean_gain_db": 0.09926796662781143
+        }
+      ]
+    },
+    "margin-hybrid vs margin-de200": {
+      "mean_gain_db": 0.09856723061453036,
+      "median_case_gain_db": 0.08741247510755273,
+      "range_case_gain_db": [
+        0.003124291965896475,
+        0.25068512102776525
+      ],
+      "targets_positive": 12,
+      "targets_above_quarter_db": 1,
+      "bounded_paired_wins": 48,
+      "bounded_paired_losses": 6,
+      "overlapping_enclosures": 6,
+      "group_mean_gain_db": {
+        "symmetric-u": 0.13651059011767797,
+        "single-sector": 0.06062387111138273
+      },
+      "per_target": [
+        {
+          "target": "fresh-01",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.08289094352313278
+        },
+        {
+          "target": "fresh-02",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.09193400669197267
+        },
+        {
+          "target": "fresh-03",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.1557331308781599
+        },
+        {
+          "target": "fresh-04",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.25068512102776525
+        },
+        {
+          "target": "fresh-05",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.09824751103726186
+        },
+        {
+          "target": "fresh-06",
+          "group": "symmetric-u",
+          "mean_gain_db": 0.13957282754777545
+        },
+        {
+          "target": "fresh-07",
+          "group": "single-sector",
+          "mean_gain_db": 0.07098896059027168
+        },
+        {
+          "target": "fresh-08",
+          "group": "single-sector",
+          "mean_gain_db": 0.026262730829663638
+        },
+        {
+          "target": "fresh-09",
+          "group": "single-sector",
+          "mean_gain_db": 0.06026372861149802
+        },
+        {
+          "target": "fresh-10",
+          "group": "single-sector",
+          "mean_gain_db": 0.003124291965896475
+        },
+        {
+          "target": "fresh-11",
+          "group": "single-sector",
+          "mean_gain_db": 0.12171415238377818
+        },
+        {
+          "target": "fresh-12",
+          "group": "single-sector",
+          "mean_gain_db": 0.0813893622871884
+        }
+      ]
+    }
+  },
+  "saturation": [
+    {
+      "target": "test-right",
+      "initial_db": -14.937171200930628,
+      "initial_id": "test-right__de__2718",
+      "first_exploration_best_db": -14.9613461940482,
+      "first_gain_db": 0.02417499311757254,
+      "best_20_more_de_db": -14.88797287099623,
+      "best_20_hybrid_db": -14.961346194048206,
+      "hybrid_gain_over_more_de_db": 0.07337332305197641,
+      "more_de_id": "test-right__more-de__5012",
+      "hybrid_id": "test-right__more-de-hybrid__5001"
+    },
+    {
+      "target": "test-left",
+      "initial_db": -14.816626310044555,
+      "initial_id": "test-left__slsqp__1729",
+      "first_exploration_best_db": -14.860279104156099,
+      "first_gain_db": 0.043652794111544324,
+      "best_20_more_de_db": -14.860358294652967,
+      "best_20_hybrid_db": -14.947805584241944,
+      "hybrid_gain_over_more_de_db": 0.08744728958897774,
+      "more_de_id": "test-left__more-de__5012",
+      "hybrid_id": "test-left__more-de-hybrid__5007"
+    },
+    {
+      "target": "test-scan",
+      "initial_db": -14.98689068355581,
+      "initial_id": "test-scan__slsqp__1729",
+      "first_exploration_best_db": -14.98689068355581,
+      "first_gain_db": 0.0,
+      "best_20_more_de_db": -14.953344437300274,
+      "best_20_hybrid_db": -14.965666921333797,
+      "hybrid_gain_over_more_de_db": 0.01232248403352365,
+      "more_de_id": "test-scan__more-de__5003",
+      "hybrid_id": "test-scan__more-de-hybrid__5011"
+    },
+    {
+      "target": "test-two-notch",
+      "initial_db": -13.130021073542268,
+      "initial_id": "test-two-notch__de__1729",
+      "first_exploration_best_db": -13.636477097645239,
+      "first_gain_db": 0.5064560241029703,
+      "best_20_more_de_db": -13.426120147660438,
+      "best_20_hybrid_db": -13.636477097645239,
+      "hybrid_gain_over_more_de_db": 0.21035694998480103,
+      "more_de_id": "test-two-notch__more-de__5008",
+      "hybrid_id": "test-two-notch__more-de-hybrid__5003"
+    }
+  ],
+  "benchmark_elapsed_seconds": 891.7952287080698,
+  "case_count": 12,
+  "seeds_per_case": 5,
+  "notes": [
+    "Descriptive local trial; no population-level confidence claim.",
+    "New target family was declared before evaluation; algorithms frozen before fresh results.",
+    "Objective includes a 16x protected-sector power weight. Weighted dB is not global sidelobe dB.",
+    "Wall times were affected by concurrent experiments; objective calls are a complementary budget measure."
+  ]
+}

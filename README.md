@@ -1,5 +1,7 @@
 # Antenna array beam-pattern optimization — LOCAL pilot
 
+**Contributor trial (2026-10-20):** [Featured-pilot assessment](trial/ASSESSMENT.md), [animated progress](trial/figures/contributor-progress.gif), and [trial reproduction instructions](trial/README.md). The original baseline and frontier described below remain unchanged.
+
 A reproducible Discovery@Home simulation pilot for a **16-element, half-wavelength, equal-amplitude array with 6-bit phase control at 3 GHz**. It asks whether phase configuration can reduce unwanted-sector radiation while preserving gain, beamwidth and pointing. The element field pattern is explicitly isotropic. This is an ideal array-factor model, not a hardware performance claim.
 
 **Start with [the results and plots](docs/RESULTS.md).** Across four held-out target masks and three seeds, differential evolution improved the weighted off-target objective by 5.51 dB on average over quantized steering; constrained SLSQP improved it by 4.37 dB. Global fixed-mask sidelobes improved by 1.25 and 1.37 dB respectively. Both had nominally feasible results, but calibration stress exposed some gain-floor failures. An amplitude-taper reference performed better with additional hardware freedom. No scientific novelty or global optimality is established.
@@ -19,7 +21,7 @@ export OMP_NUM_THREADS=1
 .venv/bin/python -m src.check
 ```
 
-Expected: **8 tests passed**, and PASS lines for 72 nominal witnesses, independent uniform-theta grids, schema/track checks, 192 deterministic stress-trial replays, all recorded stress summaries/bounds, frontier values and artifact hashes. Verification is normally under one minute after dependencies are installed. All 6,144 stress trials can be replayed with:
+Expected in this extended checkout: **12 tests passed** (8 original evaluator tests and 4 contributor-reasoning tests), and PASS lines for 72 nominal witnesses, independent uniform-theta grids, schema/track checks, 192 deterministic stress-trial replays, all recorded stress summaries/bounds, frontier values and artifact hashes. Verification is normally under one minute after dependencies are installed. All 6,144 stress trials can be replayed with:
 
 ```bash
 .venv/bin/python -m src.check --full-stress

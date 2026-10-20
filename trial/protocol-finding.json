@@ -1,0 +1,8 @@
+{
+  "v": 0,
+  "kind": "finding",
+  "scope": "LOCAL contributor trial: fixed 16-element, 6-bit phase-only array; 12 fresh target masks, extra-solver controls, calibration-gain bound and featured-pilot suitability assessment",
+  "base": "ad3e034105b1d88610a22ba1fb1acd1547757b40",
+  "posted_at": "2026-10-20T19:27:49.581105+00:00",
+  "evidence_level": "author-checked"
+}

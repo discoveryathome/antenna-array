@@ -1,0 +1,13 @@
+{
+  "purpose":"Fresh error realizations after algorithm freeze; no algorithm changes based on these outcomes",
+  "representative_seed":901,
+  "error_seed":11235813,
+  "draws":64,
+  "phase_error_degrees":2.0,
+  "position_error_wavelengths":0.005,
+  "amplitude_error_fraction":0.03,
+  "distribution":"independent uniform coordinates; identical draws for every method and target",
+  "adversarial_gain_starts":3,
+  "verification_grid":2049,
+  "important_limit":"Analytical bound covers coherent efficiency only. Width/pointing/sidelobe robustness is empirical; numerical adversarial minima are upper bounds on true worst-case efficiency, not certificates."
+}

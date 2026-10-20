@@ -1,0 +1,47 @@
+[
+  {
+    "elements": 16,
+    "angular_samples": 469,
+    "candidates": 256,
+    "objective_matrix_bytes": 120064,
+    "build_seconds": 0.0006789580220356584,
+    "batch_seconds": 0.0029909579316154122,
+    "peak_rss_bytes": 38846464
+  },
+  {
+    "elements": 32,
+    "angular_samples": 1010,
+    "candidates": 256,
+    "objective_matrix_bytes": 517120,
+    "build_seconds": 0.0025285830488428473,
+    "batch_seconds": 0.05576749995816499,
+    "peak_rss_bytes": 45350912
+  },
+  {
+    "elements": 64,
+    "angular_samples": 2092,
+    "candidates": 256,
+    "objective_matrix_bytes": 2142208,
+    "build_seconds": 0.012808750034309924,
+    "batch_seconds": 0.2242958750575781,
+    "peak_rss_bytes": 65224704
+  },
+  {
+    "elements": 128,
+    "angular_samples": 4256,
+    "candidates": 256,
+    "objective_matrix_bytes": 8716288,
+    "build_seconds": 0.2037507089553401,
+    "batch_seconds": 0.1503223329782486,
+    "peak_rss_bytes": 109051904
+  },
+  {
+    "elements": 256,
+    "angular_samples": 8585,
+    "candidates": 256,
+    "objective_matrix_bytes": 35164160,
+    "build_seconds": 0.733061834005639,
+    "batch_seconds": 0.6072852918878198,
+    "peak_rss_bytes": 214794240
+  }
+]

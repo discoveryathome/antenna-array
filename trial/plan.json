@@ -1,0 +1,193 @@
+{
+  "started_at": "2026-10-20T18:55:53Z",
+  "budget_minutes": 45,
+  "base": "ad3e034105b1d88610a22ba1fb1acd1547757b40",
+  "picker_seed": "ce159d5b459f1087e0f32b440cbc8f99",
+  "picker_task": "replication-01",
+  "scope": "Replicate baseline, then user-directed bounded hill-climb/suitability trial. Original target cases are development now; new targets below are held out until algorithm freeze.",
+  "evaluation_seeds": [
+    901,
+    902,
+    903,
+    904,
+    905
+  ],
+  "new_target_seed": 20261020,
+  "targets": [
+    {
+      "id": "fresh-01",
+      "split": "held-out",
+      "steer_deg": 15.444893277864738,
+      "notches_deg": [
+        [
+          -4.817246695749048,
+          1.0112101427399949
+        ],
+        [
+          30.995773776699185,
+          38.068320345014556
+        ]
+      ],
+      "group": "symmetric-u"
+    },
+    {
+      "id": "fresh-02",
+      "split": "held-out",
+      "steer_deg": -5.2601757762511285,
+      "notches_deg": [
+        [
+          -34.78892219618521,
+          -27.82532517046531
+        ],
+        [
+          16.46446576863839,
+          22.78025321917602
+        ]
+      ],
+      "group": "symmetric-u"
+    },
+    {
+      "id": "fresh-03",
+      "split": "held-out",
+      "steer_deg": -17.144747613458996,
+      "notches_deg": [
+        [
+          -52.94507946819017,
+          -47.24969809887519
+        ],
+        [
+          8.322543449580099,
+          12.033576544504442
+        ]
+      ],
+      "group": "symmetric-u"
+    },
+    {
+      "id": "fresh-04",
+      "split": "held-out",
+      "steer_deg": 9.637675994346452,
+      "notches_deg": [
+        [
+          -20.99832218243497,
+          -16.55311497229134
+        ],
+        [
+          38.29702062414234,
+          43.88194666397833
+        ]
+      ],
+      "group": "symmetric-u"
+    },
+    {
+      "id": "fresh-05",
+      "split": "held-out",
+      "steer_deg": -9.409482662056535,
+      "notches_deg": [
+        [
+          -35.99552193600249,
+          -30.330827448653014
+        ],
+        [
+          10.254079526825192,
+          15.114185596113709
+        ]
+      ],
+      "group": "symmetric-u"
+    },
+    {
+      "id": "fresh-06",
+      "split": "held-out",
+      "steer_deg": 3.24407089003851,
+      "notches_deg": [
+        [
+          -25.24472291172649,
+          -19.68520079753924
+        ],
+        [
+          26.74567370593585,
+          32.6607945162214
+        ]
+      ],
+      "group": "symmetric-u"
+    },
+    {
+      "id": "fresh-07",
+      "split": "held-out",
+      "steer_deg": 1.3391777136595209,
+      "notches_deg": [
+        [
+          22.544223219860186,
+          27.060468406556648
+        ]
+      ],
+      "group": "single-sector"
+    },
+    {
+      "id": "fresh-08",
+      "split": "held-out",
+      "steer_deg": 9.971020978907605,
+      "notches_deg": [
+        [
+          -15.88751027062795,
+          -12.762826260560622
+        ]
+      ],
+      "group": "single-sector"
+    },
+    {
+      "id": "fresh-09",
+      "split": "held-out",
+      "steer_deg": -18.25253925547986,
+      "notches_deg": [
+        [
+          0.3867050237138116,
+          4.588359757793997
+        ]
+      ],
+      "group": "single-sector"
+    },
+    {
+      "id": "fresh-10",
+      "split": "held-out",
+      "steer_deg": -6.187828984817987,
+      "notches_deg": [
+        [
+          -35.18484812931833,
+          -29.28880169175491
+        ]
+      ],
+      "group": "single-sector"
+    },
+    {
+      "id": "fresh-11",
+      "split": "held-out",
+      "steer_deg": 17.49479497878009,
+      "notches_deg": [
+        [
+          38.8799956321485,
+          46.39784493281249
+        ]
+      ],
+      "group": "single-sector"
+    },
+    {
+      "id": "fresh-12",
+      "split": "held-out",
+      "steer_deg": 10.338828413549134,
+      "notches_deg": [
+        [
+          -10.053945787450646,
+          -5.491336400427695
+        ]
+      ],
+      "group": "single-sector"
+    }
+  ],
+  "declared_before_results": "2026-10-20T18:58:56.823000+00:00",
+  "success_criteria": [
+    "At least 0.25 dB verified weighted-score improvement over incumbent on an original case without constraint violation",
+    "Improvement survives independent peak bounds and fresh-target comparisons",
+    "Assess against extra solver compute, not only steering",
+    "Evaluate robustness and public demonstration honesty; no hardware or novelty claim"
+  ]
+}

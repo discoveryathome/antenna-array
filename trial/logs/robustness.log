@@ -1,0 +1,102 @@
+STRESS fresh-01__margin-de200__901 64 /64 bound 0.8573 adversary 0.8828
+STRESS fresh-01__margin-de160__901 64 /64 bound 0.8573 adversary 0.8828
+STRESS fresh-01__de640__901 34 /64 bound 0.7952 adversary 0.8243
+STRESS fresh-01__de200__901 29 /64 bound 0.7946 adversary 0.8229
+STRESS fresh-01__de160__901 29 /64 bound 0.7946 adversary 0.8229
+STRESS fresh-01__hybrid__901 37 /64 bound 0.7963 adversary 0.8258
+STRESS fresh-01__margin-hybrid__901 64 /64 bound 0.8573 adversary 0.8828
+STRESS fresh-02__margin-de200__901 64 /64 bound 0.8573 adversary 0.8804
+STRESS fresh-02__margin-de160__901 64 /64 bound 0.8577 adversary 0.8809
+STRESS fresh-02__de640__901 60 /64 bound 0.8044 adversary 0.8295
+STRESS fresh-02__de200__901 31 /64 bound 0.7992 adversary 0.8245
+STRESS fresh-02__de160__901 31 /64 bound 0.7992 adversary 0.8245
+STRESS fresh-02__hybrid__901 39 /64 bound 0.8006 adversary 0.8255
+STRESS fresh-02__margin-hybrid__901 64 /64 bound 0.8585 adversary 0.8818
+STRESS fresh-03__margin-de200__901 64 /64 bound 0.8563 adversary 0.8813
+STRESS fresh-03__margin-de160__901 64 /64 bound 0.8565 adversary 0.8817
+STRESS fresh-03__de640__901 55 /64 bound 0.7982 adversary 0.8246
+STRESS fresh-03__de200__901 64 /64 bound 0.8039 adversary 0.8297
+STRESS fresh-03__de160__901 64 /64 bound 0.8227 adversary 0.8488
+STRESS fresh-03__hybrid__901 55 /64 bound 0.7987 adversary 0.8247
+STRESS fresh-03__margin-hybrid__901 64 /64 bound 0.8579 adversary 0.8833
+STRESS fresh-04__margin-de200__901 64 /64 bound 0.8583 adversary 0.8814
+STRESS fresh-04__margin-de160__901 64 /64 bound 0.8561 adversary 0.879
+STRESS fresh-04__de640__901 52 /64 bound 0.8009 adversary 0.8243
+STRESS fresh-04__de200__901 63 /64 bound 0.8046 adversary 0.8287
+STRESS fresh-04__de160__901 63 /64 bound 0.8046 adversary 0.8287
+STRESS fresh-04__hybrid__901 56 /64 bound 0.8015 adversary 0.8273
+STRESS fresh-04__margin-hybrid__901 64 /64 bound 0.8564 adversary 0.8791
+STRESS fresh-05__margin-de200__901 64 /64 bound 0.8561 adversary 0.8795
+STRESS fresh-05__margin-de160__901 64 /64 bound 0.8561 adversary 0.8795
+STRESS fresh-05__de640__901 26 /64 bound 0.7969 adversary 0.8229
+STRESS fresh-05__de200__901 53 /64 bound 0.8006 adversary 0.8265
+STRESS fresh-05__de160__901 58 /64 bound 0.8037 adversary 0.8296
+STRESS fresh-05__hybrid__901 42 /64 bound 0.7991 adversary 0.826
+STRESS fresh-05__margin-hybrid__901 64 /64 bound 0.8578 adversary 0.8812
+STRESS fresh-06__margin-de200__901 64 /64 bound 0.856 adversary 0.8794
+STRESS fresh-06__margin-de160__901 64 /64 bound 0.856 adversary 0.8794
+STRESS fresh-06__de640__901 59 /64 bound 0.806 adversary 0.8316
+STRESS fresh-06__de200__901 31 /64 bound 0.8004 adversary 0.8266
+STRESS fresh-06__de160__901 55 /64 bound 0.8046 adversary 0.8301
+STRESS fresh-06__hybrid__901 57 /64 bound 0.805 adversary 0.8316
+STRESS fresh-06__margin-hybrid__901 64 /64 bound 0.8578 adversary 0.8816
+STRESS fresh-07__margin-de200__901 64 /64 bound 0.8598 adversary 0.8822
+STRESS fresh-07__margin-de160__901 64 /64 bound 0.8598 adversary 0.8822
+STRESS fresh-07__de640__901 64 /64 bound 0.8432 adversary 0.8672
+STRESS fresh-07__de200__901 64 /64 bound 0.8472 adversary 0.8712
+STRESS fresh-07__de160__901 64 /64 bound 0.8451 adversary 0.8691
+STRESS fresh-07__hybrid__901 64 /64 bound 0.826 adversary 0.8496
+STRESS fresh-07__margin-hybrid__901 64 /64 bound 0.8598 adversary 0.8822
+STRESS fresh-08__margin-de200__901 64 /64 bound 0.8571 adversary 0.8797
+STRESS fresh-08__margin-de160__901 64 /64 bound 0.8569 adversary 0.8795
+STRESS fresh-08__de640__901 64 /64 bound 0.8187 adversary 0.8435
+STRESS fresh-08__de200__901 64 /64 bound 0.8105 adversary 0.8349
+STRESS fresh-08__de160__901 64 /64 bound 0.8161 adversary 0.8407
+STRESS fresh-08__hybrid__901 61 /64 bound 0.8039 adversary 0.8294
+STRESS fresh-08__margin-hybrid__901 64 /64 bound 0.8602 adversary 0.884
+STRESS fresh-09__margin-de200__901 64 /64 bound 0.8565 adversary 0.881
+STRESS fresh-09__margin-de160__901 64 /64 bound 0.8565 adversary 0.881
+STRESS fresh-09__de640__901 64 /64 bound 0.8039 adversary 0.8296
+STRESS fresh-09__de200__901 64 /64 bound 0.81 adversary 0.8352
+STRESS fresh-09__de160__901 64 /64 bound 0.81 adversary 0.8352
+STRESS fresh-09__hybrid__901 64 /64 bound 0.8091 adversary 0.8361
+STRESS fresh-09__margin-hybrid__901 64 /64 bound 0.8593 adversary 0.884
+STRESS fresh-10__margin-de200__901 64 /64 bound 0.8561 adversary 0.8796
+STRESS fresh-10__margin-de160__901 64 /64 bound 0.8576 adversary 0.8807
+STRESS fresh-10__de640__901 64 /64 bound 0.8108 adversary 0.8358
+STRESS fresh-10__de200__901 64 /64 bound 0.8397 adversary 0.8623
+STRESS fresh-10__de160__901 64 /64 bound 0.8361 adversary 0.859
+STRESS fresh-10__hybrid__901 63 /64 bound 0.8072 adversary 0.8321
+STRESS fresh-10__margin-hybrid__901 64 /64 bound 0.8582 adversary 0.8823
+STRESS fresh-11__margin-de200__901 64 /64 bound 0.8587 adversary 0.8827
+STRESS fresh-11__margin-de160__901 64 /64 bound 0.8587 adversary 0.8827
+STRESS fresh-11__de640__901 64 /64 bound 0.8122 adversary 0.8387
+STRESS fresh-11__de200__901 64 /64 bound 0.8122 adversary 0.8387
+STRESS fresh-11__de160__901 64 /64 bound 0.8122 adversary 0.8387
+STRESS fresh-11__hybrid__901 64 /64 bound 0.8122 adversary 0.8387
+STRESS fresh-11__margin-hybrid__901 64 /64 bound 0.8623 adversary 0.8868
+STRESS fresh-12__margin-de200__901 64 /64 bound 0.8564 adversary 0.8788
+STRESS fresh-12__margin-de160__901 64 /64 bound 0.8564 adversary 0.8788
+STRESS fresh-12__de640__901 64 /64 bound 0.8304 adversary 0.856
+STRESS fresh-12__de200__901 64 /64 bound 0.8278 adversary 0.8531
+STRESS fresh-12__de160__901 64 /64 bound 0.8278 adversary 0.8531
+STRESS fresh-12__hybrid__901 64 /64 bound 0.8194 adversary 0.8445
+STRESS fresh-12__margin-hybrid__901 64 /64 bound 0.8635 adversary 0.8877
+      896.97 real        86.38 user         1.94 sys
+            88244224  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               16547  page reclaims
+                 116  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 701  voluntary context switches
+              214655  involuntary context switches
+        433349365149  instructions retired
+        174512170841  cycles elapsed
+            71041576  peak memory footprint

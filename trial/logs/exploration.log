@@ -1,0 +1,56 @@
+
+CASE test-right incumbent -14.937171200930628
+single 71 -14.9372 eta 0.86548 calls 5001 s 0.3 valid True
+single 72 -14.9372 eta 0.86548 calls 5001 s 0.3 valid True
+single 73 -14.9372 eta 0.86548 calls 5001 s 0.42 valid True
+paired 71 -14.9372 eta 0.86548 calls 5001 s 0.28 valid True
+paired 72 -14.9372 eta 0.86548 calls 5002 s 0.4 valid True
+paired 73 -14.9372 eta 0.86548 calls 5002 s 0.45 valid True
+hybrid 71 -14.9613 eta 0.86563 calls 8093 s 1.0 valid True
+hybrid 72 -14.9613 eta 0.86563 calls 8093 s 0.88 valid True
+hybrid 73 -14.9613 eta 0.86563 calls 8093 s 0.95 valid True
+margin-hybrid 71 -14.8982 eta 0.88084 calls 8144 s 1.45 valid True
+margin-hybrid 72 -14.8982 eta 0.88084 calls 8143 s 1.12 valid True
+margin-hybrid 73 -14.8982 eta 0.88084 calls 8145 s 0.96 valid True
+
+CASE test-left incumbent -14.816626310044555
+single 71 -14.8166 eta 0.85388 calls 5001 s 0.23 valid True
+single 72 -14.8166 eta 0.85388 calls 5001 s 0.39 valid True
+single 73 -14.8603 eta 0.85314 calls 5001 s 0.44 valid True
+paired 71 -14.8406 eta 0.86147 calls 5001 s 0.31 valid True
+paired 72 -14.8166 eta 0.85388 calls 5002 s 0.26 valid True
+paired 73 -14.8166 eta 0.85388 calls 5002 s 0.37 valid True
+hybrid 71 -14.8214 eta 0.86354 calls 8130 s 0.82 valid True
+hybrid 72 -14.8214 eta 0.86354 calls 8093 s 0.67 valid True
+hybrid 73 -14.8425 eta 0.86245 calls 8093 s 0.73 valid True
+margin-hybrid 71 -14.7124 eta 0.8829 calls 8184 s 1.09 valid True
+margin-hybrid 72 -14.7019 eta 0.88205 calls 8200 s 1.91 valid True
+margin-hybrid 73 -14.6935 eta 0.88538 calls 8180 s 1.54 valid True
+
+CASE test-scan incumbent -14.98689068355581
+single 71 -14.9869 eta 0.86257 calls 5001 s 0.46 valid True
+single 72 -14.9869 eta 0.86257 calls 5001 s 0.34 valid True
+single 73 -14.9869 eta 0.86257 calls 5001 s 0.36 valid True
+paired 71 -14.9869 eta 0.86257 calls 5002 s 0.28 valid True
+paired 72 -14.9869 eta 0.86257 calls 5001 s 0.35 valid True
+paired 73 -14.9869 eta 0.86257 calls 5002 s 0.28 valid True
+hybrid 71 -14.9149 eta 0.85691 calls 8089 s 0.83 valid True
+hybrid 72 -14.9149 eta 0.85691 calls 8089 s 0.82 valid True
+hybrid 73 -14.9785 eta 0.86012 calls 8089 s 0.67 valid True
+margin-hybrid 71 -14.7288 eta 0.88438 calls 8186 s 1.36 valid True
+margin-hybrid 72 -14.6704 eta 0.88406 calls 8183 s 0.95 valid True
+margin-hybrid 73 -14.7473 eta 0.88224 calls 8177 s 1.21 valid True
+
+CASE test-two-notch incumbent -13.130021073542268
+single 71 -13.13 eta 0.85052 calls 5001 s 0.34 valid True
+single 72 -13.13 eta 0.85052 calls 5001 s 0.22 valid True
+single 73 -13.1708 eta 0.85652 calls 5001 s 0.27 valid True
+paired 71 -13.2008 eta 0.86057 calls 5002 s 0.32 valid True
+paired 72 -13.1726 eta 0.85026 calls 5002 s 0.29 valid True
+paired 73 -13.3056 eta 0.8566 calls 5002 s 0.31 valid True
+hybrid 71 -13.6365 eta 0.85387 calls 8128 s 0.63 valid True
+hybrid 72 -13.6365 eta 0.85387 calls 8117 s 0.54 valid True
+hybrid 73 -13.6365 eta 0.85387 calls 8118 s 0.58 valid True
+margin-hybrid 71 -13.0528 eta 0.88362 calls 8135 s 0.5 valid True
+margin-hybrid 72 -12.8402 eta 0.8859 calls 8135 s 0.51 valid True
+margin-hybrid 73 -12.8402 eta 0.8859 calls 8135 s 0.55 valid True
