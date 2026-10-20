@@ -1,0 +1,153 @@
+{
+  "schema": "discover-catalog/v0",
+  "priority_revision": 1,
+  "assessed_on": "2026-10-20",
+  "priority_log": "discover/priority-log.md",
+  "status": "local proposal; intake paused",
+  "tracks": [
+    {
+      "id": "verification",
+      "weight": 30,
+      "useful_outcome": "Can directed rounding or interval arithmetic turn the peak enclosure into a rigorous numerical certificate?",
+      "tasks": [
+        {
+          "id": "verification-01",
+          "question": "Can directed rounding or interval arithmetic turn the peak enclosure into a rigorous numerical certificate?",
+          "starting_points": [
+            "docs/MODEL.md",
+            "docs/RESULTS.md",
+            "docs/LITERATURE.md"
+          ],
+          "methods": [
+            "interval arithmetic",
+            "analytical curvature bounds",
+            "adversarial aliasing tests"
+          ],
+          "acceptance_gate": "Reproducible evidence under an explicit model; independent review pending; do not alter frozen test results. No hardware or novelty claim without separate evidence.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.check",
+              "--section",
+              "numerical"
+            ],
+            "expected": "PASS numerical for all 72 constructions and uniform-theta audits"
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck-and-tracks",
+          "claim_kind": [
+            "model"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "replication",
+      "weight": 25,
+      "useful_outcome": "Can an independent implementation reproduce the known uniform result and the local phase witnesses?",
+      "tasks": [
+        {
+          "id": "replication-01",
+          "question": "Can an independent implementation reproduce the known uniform result and the local phase witnesses?",
+          "starting_points": [
+            "docs/MODEL.md",
+            "docs/RESULTS.md",
+            "docs/LITERATURE.md"
+          ],
+          "methods": [
+            "closed-form uniform AF",
+            "independent real sums",
+            "fresh checkout"
+          ],
+          "acceptance_gate": "Reproducible evidence under an explicit model; independent review pending; do not alter frozen test results. No hardware or novelty claim without separate evidence.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.verify",
+              "--row",
+              "dev-broadside__uniform__None"
+            ],
+            "expected": "PASS: 1 witness; uniform coherent eta=1 and fixed-mask SLL about -13.147 dB"
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck-and-tracks",
+          "claim_kind": [
+            "model"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "literature-bounds",
+      "weight": 20,
+      "useful_outcome": "Which modern phase-only or gridless reference provides a comparable relaxation or baseline?",
+      "tasks": [
+        {
+          "id": "literature-bounds-01",
+          "question": "Which modern phase-only or gridless reference provides a comparable relaxation or baseline?",
+          "starting_points": [
+            "docs/MODEL.md",
+            "docs/RESULTS.md",
+            "docs/LITERATURE.md"
+          ],
+          "methods": [
+            "full-text literature audit",
+            "convex relaxation",
+            "manifold comparison"
+          ],
+          "acceptance_gate": "Reproducible evidence under an explicit model; independent review pending; do not alter frozen test results. No hardware or novelty claim without separate evidence.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.check",
+              "--section",
+              "literature"
+            ],
+            "expected": "PASS literature inventory; identify full-text and formulation gaps"
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck-and-tracks",
+          "claim_kind": [
+            "model"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "robust-synthesis",
+      "weight": 25,
+      "useful_outcome": "Can explicit calibration margin improve error-box guarantees without unacceptable nominal suppression loss?",
+      "tasks": [
+        {
+          "id": "robust-synthesis-01",
+          "question": "Can explicit calibration margin improve error-box guarantees without unacceptable nominal suppression loss?",
+          "starting_points": [
+            "docs/MODEL.md",
+            "docs/RESULTS.md",
+            "docs/LITERATURE.md"
+          ],
+          "methods": [
+            "robust minimax synthesis",
+            "quantized DE",
+            "held-out target expansion"
+          ],
+          "acceptance_gate": "Reproducible evidence under an explicit model; independent review pending; do not alter frozen test results. No hardware or novelty claim without separate evidence.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.check",
+              "--section",
+              "robustness"
+            ],
+            "expected": "PASS 192 deterministic stress samples and all summary/bound checks"
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck-and-tracks",
+          "claim_kind": [
+            "model"
+          ]
+        }
+      ]
+    }
+  ]
+}

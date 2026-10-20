@@ -1,0 +1,46 @@
+[
+  {
+    "target": "test-right",
+    "id": "test-right__de__2718",
+    "value": -14.937171200930628,
+    "object": "results/candidates.json",
+    "method": "de",
+    "seed": 2718,
+    "by": "Codex initial local pilot; author-checked",
+    "source": "results/heldout.json",
+    "updated": "2026-10-20"
+  },
+  {
+    "target": "test-left",
+    "id": "test-left__slsqp__1729",
+    "value": -14.816626310044555,
+    "object": "results/candidates.json",
+    "method": "slsqp",
+    "seed": 1729,
+    "by": "Codex initial local pilot; author-checked",
+    "source": "results/heldout.json",
+    "updated": "2026-10-20"
+  },
+  {
+    "target": "test-scan",
+    "id": "test-scan__slsqp__1729",
+    "value": -14.98689068355581,
+    "object": "results/candidates.json",
+    "method": "slsqp",
+    "seed": 1729,
+    "by": "Codex initial local pilot; author-checked",
+    "source": "results/heldout.json",
+    "updated": "2026-10-20"
+  },
+  {
+    "target": "test-two-notch",
+    "id": "test-two-notch__de__1729",
+    "value": -13.130021073542268,
+    "object": "results/candidates.json",
+    "method": "de",
+    "seed": 1729,
+    "by": "Codex initial local pilot; author-checked",
+    "source": "results/heldout.json",
+    "updated": "2026-10-20"
+  }
+]

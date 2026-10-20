@@ -1,0 +1,94 @@
+{
+  "schema": "discover-frontier/v0",
+  "statement": "For each of four frozen held-out masks, the table records the lowest independently evaluated weighted peak upper bound among the locally generated feasible 16-element equal-amplitude 6-bit phase-only candidates. These are model witnesses and best-of-local-portfolio values, not global optima or literature records.",
+  "status": "Local proposal, author checked; no maintainer or scientific acceptance",
+  "evidence_level": [
+    "author-checked"
+  ],
+  "claim_kind": [
+    "model"
+  ],
+  "scope": "isotropic-ula-phase-v1, 3 GHz, 16 fixed half-wavelength elements; eta>=0.85, HPBW_u<=0.14, pointing_error_u<=0.015; fixed exclusion +/-0.15u and protected sectors; float64 curvature enclosures, no hardware inference",
+  "review": "discover/review.md",
+  "updated_on": "2026-10-20",
+  "sources": [
+    "docs/LITERATURE.md",
+    "https://web.stanford.edu/~boyd/papers/ant-pat.html",
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.windows.chebwin.html",
+    "results/heldout.json"
+  ],
+  "assumptions": [
+    {
+      "id": "ideal-model",
+      "statement": "Scalar isotropic uncoupled far-field elements; hardware behavior is unverified.",
+      "status": "open",
+      "link": "docs/MODEL.md"
+    },
+    {
+      "id": "floating-point",
+      "statement": "Analytical curvature bound evaluated in float64 with padding, without directed-rounding proof.",
+      "status": "partial",
+      "link": "docs/MODEL.md"
+    },
+    {
+      "id": "novelty",
+      "statement": "No global optimum or novelty verified; literature does not supply an optimum for this exact benchmark.",
+      "status": "open",
+      "link": "docs/LITERATURE.md"
+    }
+  ],
+  "table": {
+    "path": "discover/frontier-table.json",
+    "format": "json",
+    "key": [
+      "target"
+    ],
+    "value": "value",
+    "direction": "lower-is-better",
+    "object": "object",
+    "check_row": [
+      "python",
+      "-m",
+      "src.verify",
+      "--row",
+      "{id}"
+    ],
+    "check_row_minutes": 1,
+    "by": "by",
+    "source": "source",
+    "updated": "updated"
+  },
+  "reproduce": "python -m src.check && python -m pytest -q",
+  "reproduce_full": "python -m src.check --full-stress && python -m pytest -q",
+  "reproduce_minutes": 1,
+  "prerequisites": [
+    "Python 3.14 tested",
+    "Install requirements.lock.txt into an isolated venv; see README.md"
+  ],
+  "artifacts": [
+    {
+      "path": "configs/experiment.json",
+      "sha256": "f4f2b1d0ba59c9f3fa39612ac00bebfcbc887a873a210c7b8e3d80806d7381aa"
+    },
+    {
+      "path": "configs/frozen.json",
+      "sha256": "ce4b3045ae6039cd4c41c0294d3a1cf693e0cacd9a6197fad214e1dc0dc120c0"
+    },
+    {
+      "path": "results/candidates.json",
+      "sha256": "157e43a06ee084d5b60c5f8f1f8ca4e43fb0b61a8363617363e00d351f533a61"
+    },
+    {
+      "path": "results/robustness.json",
+      "sha256": "8976834064b3de1fbdca687ac37668aa0a7c4c8f287ee2de435d4fddc5f62e28"
+    },
+    {
+      "path": "results/summary.json",
+      "sha256": "0b9b831920b85ae7c902978b621d4874782a6628818f1ee4adb243ffa107e462"
+    },
+    {
+      "path": "discover/frontier-table.json",
+      "sha256": "1499c02472bcaa1a7a0de9a6882f8b1447692a4a50627f0babb2198d2b7351e0"
+    }
+  ]
+}
