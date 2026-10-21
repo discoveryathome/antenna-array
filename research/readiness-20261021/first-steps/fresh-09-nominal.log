@@ -1,0 +1,26 @@
+{
+  "metrics": {
+    "target_power": 0.8648149856649908,
+    "coherent_efficiency": 0.8648149856649908,
+    "main_region_power_fraction": 0.8117436397739394,
+    "directivity_target": 13.837039770639853,
+    "sidelobe_db_lower": -14.979809291339999,
+    "sidelobe_db_upper": -14.97947824286086,
+    "notch_db_lower": -27.174775631712464,
+    "notch_db_upper": -27.16930655629397,
+    "score_lower": 0.03177013577533865,
+    "score_upper": 0.031772557601181375,
+    "weighted_peak_db_lower": -14.979809291339999,
+    "weighted_peak_db_upper": -14.97947824286086,
+    "hpbw_u": 0.11414668290592644,
+    "hpbw_deg": 6.88122265097895,
+    "peak_u": -0.30893149144686743,
+    "pointing_error_u": 0.004274403845326347,
+    "main_peak_power_upper": 0.8679735507031189,
+    "peak_enclosure_gap_db": 0.005469075418494917,
+    "feasible": true
+  },
+  "efficiency_error_box_lower": 0.8098181384340498,
+  "established_improvement": false
+}
+

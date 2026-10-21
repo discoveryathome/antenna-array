@@ -1,0 +1,479 @@
+[
+  {
+    "project": "antenna",
+    "task": "verification-01",
+    "command": [
+      "python",
+      "-m",
+      "src.check",
+      "--section",
+      "numerical"
+    ],
+    "returncode": 0,
+    "seconds": 5.649547958979383,
+    "log": "research/readiness-20261021/first-steps/verification-01.log",
+    "log_sha256": "04564e22aee5ecd60a86a2a9505e66d110f935fa315495ab6e3541a8b2e3b3bf"
+  },
+  {
+    "project": "antenna",
+    "task": "replication-01",
+    "command": [
+      "python",
+      "-m",
+      "src.verify",
+      "--row",
+      "dev-broadside__uniform__None"
+    ],
+    "returncode": 0,
+    "seconds": 3.1768825420876965,
+    "log": "research/readiness-20261021/first-steps/replication-01.log",
+    "log_sha256": "3d315edd28113e13ab076cb24d79e39a88e4f9134f9419fdc941107b9e6d00de"
+  },
+  {
+    "project": "antenna",
+    "task": "literature-bounds-01",
+    "command": [
+      "python",
+      "-m",
+      "src.check",
+      "--section",
+      "literature"
+    ],
+    "returncode": 0,
+    "seconds": 3.1308680420042947,
+    "log": "research/readiness-20261021/first-steps/literature-bounds-01.log",
+    "log_sha256": "5524510f122915c04ad14fa0bb841dfe1a7c5f0e234deeadf06f1d24325c53ce"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-01-nominal",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-01-nominal",
+      "--candidate",
+      "research/readiness-20261021/fresh-01-nominal.json"
+    ],
+    "returncode": 0,
+    "seconds": 1.459216458024457,
+    "log": "research/readiness-20261021/first-steps/fresh-01-nominal.log",
+    "log_sha256": "b029fdbaa2688ae8ea44d5b1bf82da5756d91aa4aa690e3ee290dc235be4d15f"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-01-calibration-margin",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-01-calibration-margin",
+      "--candidate",
+      "research/readiness-20261021/fresh-01-calibration-margin.json"
+    ],
+    "returncode": 0,
+    "seconds": 1.3777950829826295,
+    "log": "research/readiness-20261021/first-steps/fresh-01-calibration-margin.log",
+    "log_sha256": "d61bf74db56033f866889d71c289607954318908bb19104993f68f3e61859a54"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-02-nominal",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-02-nominal",
+      "--candidate",
+      "research/readiness-20261021/fresh-02-nominal.json"
+    ],
+    "returncode": 0,
+    "seconds": 1.0461835419991985,
+    "log": "research/readiness-20261021/first-steps/fresh-02-nominal.log",
+    "log_sha256": "94972586f243c29e976d4a0914af1b794a9c5fc05b2bbdb6438d0fdc1d5464a8"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-02-calibration-margin",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-02-calibration-margin",
+      "--candidate",
+      "research/readiness-20261021/fresh-02-calibration-margin.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.957112708943896,
+    "log": "research/readiness-20261021/first-steps/fresh-02-calibration-margin.log",
+    "log_sha256": "32ede5d82ca7092d2272e8249b21284556287b5717aaa9e5905937f553848cee"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-03-nominal",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-03-nominal",
+      "--candidate",
+      "research/readiness-20261021/fresh-03-nominal.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.9380265419604257,
+    "log": "research/readiness-20261021/first-steps/fresh-03-nominal.log",
+    "log_sha256": "42b3671a23e648eb5b60784fe54e2214b3ad1b1d068530b806165cb5283c22b9"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-03-calibration-margin",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-03-calibration-margin",
+      "--candidate",
+      "research/readiness-20261021/fresh-03-calibration-margin.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.9384402499999851,
+    "log": "research/readiness-20261021/first-steps/fresh-03-calibration-margin.log",
+    "log_sha256": "f6ef0effb7277c28a2631dea0c345f872fcb73e4be7868740d9c9061b5dc4d2d"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-04-nominal",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-04-nominal",
+      "--candidate",
+      "research/readiness-20261021/fresh-04-nominal.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.9253822499886155,
+    "log": "research/readiness-20261021/first-steps/fresh-04-nominal.log",
+    "log_sha256": "85536d8fbae4c7adb7395a410dbef082015f0cfb77d101cf5d2ca08f1c05f480"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-04-calibration-margin",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-04-calibration-margin",
+      "--candidate",
+      "research/readiness-20261021/fresh-04-calibration-margin.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.9432999169221148,
+    "log": "research/readiness-20261021/first-steps/fresh-04-calibration-margin.log",
+    "log_sha256": "195f939de17019fddff6943bd2a108c399eed5d00eedcfbb96b3ee11499ef49c"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-05-nominal",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-05-nominal",
+      "--candidate",
+      "research/readiness-20261021/fresh-05-nominal.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.896992375026457,
+    "log": "research/readiness-20261021/first-steps/fresh-05-nominal.log",
+    "log_sha256": "65b28bb7cda228985455d7568be403a11ac734b38d4767f3ffb079d04a06a1f2"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-05-calibration-margin",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-05-calibration-margin",
+      "--candidate",
+      "research/readiness-20261021/fresh-05-calibration-margin.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.9280269999289885,
+    "log": "research/readiness-20261021/first-steps/fresh-05-calibration-margin.log",
+    "log_sha256": "4bbfd2503613e78b4b87ff2ea08750d94335663f9fd5386c6184d9390372f9aa"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-06-nominal",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-06-nominal",
+      "--candidate",
+      "research/readiness-20261021/fresh-06-nominal.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.8782707919599488,
+    "log": "research/readiness-20261021/first-steps/fresh-06-nominal.log",
+    "log_sha256": "1514e6081f76f7f420ce98c08d6da37139a11dbcba851c19044e00a4888eb546"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-06-calibration-margin",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-06-calibration-margin",
+      "--candidate",
+      "research/readiness-20261021/fresh-06-calibration-margin.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.8649859590223059,
+    "log": "research/readiness-20261021/first-steps/fresh-06-calibration-margin.log",
+    "log_sha256": "3516dd685c9d450421845bbac4756022eebcff6993e68d679d3002a00e3f2b2d"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-07-nominal",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-07-nominal",
+      "--candidate",
+      "research/readiness-20261021/fresh-07-nominal.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.9848297499120235,
+    "log": "research/readiness-20261021/first-steps/fresh-07-nominal.log",
+    "log_sha256": "e9055716f7e89081a17b0c003d9e353318484121a20b0720ca4195d0a02b3817"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-07-calibration-margin",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-07-calibration-margin",
+      "--candidate",
+      "research/readiness-20261021/fresh-07-calibration-margin.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.8988970000064,
+    "log": "research/readiness-20261021/first-steps/fresh-07-calibration-margin.log",
+    "log_sha256": "fa83f31da5aa4c7af0d78f0d1c702aaf03d367eb5024c1de902154789f4cee4f"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-08-nominal",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-08-nominal",
+      "--candidate",
+      "research/readiness-20261021/fresh-08-nominal.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.9016071250662208,
+    "log": "research/readiness-20261021/first-steps/fresh-08-nominal.log",
+    "log_sha256": "f0f69b5bfc5f30c0a123712fff17d69abad61ca50aab2ff5d89bf0f6ca7276c7"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-08-calibration-margin",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-08-calibration-margin",
+      "--candidate",
+      "research/readiness-20261021/fresh-08-calibration-margin.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.8987621249398217,
+    "log": "research/readiness-20261021/first-steps/fresh-08-calibration-margin.log",
+    "log_sha256": "e6a6c6411dddee13d419b5205ebe3a64e4354fe02237c24367b8ed91d0fdb457"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-09-nominal",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-09-nominal",
+      "--candidate",
+      "research/readiness-20261021/fresh-09-nominal.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.9096415409585461,
+    "log": "research/readiness-20261021/first-steps/fresh-09-nominal.log",
+    "log_sha256": "45019f5dabe4f880517f3a24ec6a9ab42d0dd87cb0ed09518925ade3e9dfb545"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-09-calibration-margin",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-09-calibration-margin",
+      "--candidate",
+      "research/readiness-20261021/fresh-09-calibration-margin.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.9229241670109332,
+    "log": "research/readiness-20261021/first-steps/fresh-09-calibration-margin.log",
+    "log_sha256": "339891f1d5c1e2e987e76ca592a91fc5d62a969bdf417827b75a465fef0b193b"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-10-nominal",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-10-nominal",
+      "--candidate",
+      "research/readiness-20261021/fresh-10-nominal.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.956307000014931,
+    "log": "research/readiness-20261021/first-steps/fresh-10-nominal.log",
+    "log_sha256": "f85b8fa6d29362d47bdaedc45bbe6a0e48c9c9a53e836f4b1d1c16cbf230610d"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-10-calibration-margin",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-10-calibration-margin",
+      "--candidate",
+      "research/readiness-20261021/fresh-10-calibration-margin.json"
+    ],
+    "returncode": 0,
+    "seconds": 1.0338660000124946,
+    "log": "research/readiness-20261021/first-steps/fresh-10-calibration-margin.log",
+    "log_sha256": "07a21bde21cf5b9605ae61d97168acc3bf3895ddd0f0e368d3a2d802661a8576"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-11-nominal",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-11-nominal",
+      "--candidate",
+      "research/readiness-20261021/fresh-11-nominal.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.9014658749802038,
+    "log": "research/readiness-20261021/first-steps/fresh-11-nominal.log",
+    "log_sha256": "46725f5d2c46b6456c70a6155caea112e6a2f3a8ef868e1d171aaea2b74f9502"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-11-calibration-margin",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-11-calibration-margin",
+      "--candidate",
+      "research/readiness-20261021/fresh-11-calibration-margin.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.9609329169616103,
+    "log": "research/readiness-20261021/first-steps/fresh-11-calibration-margin.log",
+    "log_sha256": "51f58b8143cce3a2b9e073d4dbe8fd310e174de7fedde35fb8ee5d609db34898"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-12-nominal",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-12-nominal",
+      "--candidate",
+      "research/readiness-20261021/fresh-12-nominal.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.885368249961175,
+    "log": "research/readiness-20261021/first-steps/fresh-12-nominal.log",
+    "log_sha256": "764d75876b35588d582c9bd9b8ba169a639391f561c28704f6b3df994b8eda55"
+  },
+  {
+    "project": "antenna",
+    "task": "fresh-12-calibration-margin",
+    "command": [
+      "python",
+      "-m",
+      "src.readiness",
+      "check",
+      "--task",
+      "fresh-12-calibration-margin",
+      "--candidate",
+      "research/readiness-20261021/fresh-12-calibration-margin.json"
+    ],
+    "returncode": 0,
+    "seconds": 0.8980666249990463,
+    "log": "research/readiness-20261021/first-steps/fresh-12-calibration-margin.log",
+    "log_sha256": "eb211a71621ef1da9a23234a8492e9ccf99aacfbbfbeda6c4050f44b670e37c1"
+  }
+]
