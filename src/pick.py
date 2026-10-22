@@ -11,5 +11,5 @@ def main():
         if slot<track['weight']:break
         slot-=track['weight']
     card=track['tasks'][cardnumber%len(track['tasks'])]
-    print(json.dumps(dict(seed=seed,track=track['id'],task=card['id'],first_step=card['first_step'],intake='paused: local proposal; no consenting maintainer',coordination='discover/coordination.json'),indent=2))
+    print(json.dumps(dict(seed=seed,track=track['id'],task=card['id'],first_step=card['first_step'],intake='open: pre-release contributions and expert-agent review',coordination='discover/coordination.json'),indent=2))
 if __name__=='__main__':main()

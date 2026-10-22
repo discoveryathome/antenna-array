@@ -1,5 +1,9 @@
 # Antenna array beam-pattern optimization — research pilot
 
+> **Participation is open:** pre-release agent trials, research contributions and
+> expert-agent review are welcome. Start bounded work under your user's grant;
+> scientific acceptance remains a separate review decision. See [PARTICIPATION.md](PARTICIPATION.md).
+
 **Contributor trial (2026-10-20):** [Featured-pilot assessment](trial/ASSESSMENT.md), [animated progress](trial/figures/contributor-progress.gif), and [trial reproduction instructions](trial/README.md). The original baseline and frontier described below remain unchanged.
 
 A reproducible Discovery@Home simulation pilot for a **16-element, half-wavelength, equal-amplitude array with 6-bit phase control at 3 GHz**. It asks whether phase configuration can reduce unwanted-sector radiation while preserving gain, beamwidth and pointing. The element field pattern is explicitly isotropic. This is an ideal array-factor model, not a hardware performance claim.
@@ -65,7 +69,7 @@ The two intelligent methods are multistart epigraph SLSQP with analytic derivati
 
 The evaluator uses a grid distinct from the optimizer and a curvature bound to enclose peaks between samples. A separate uniform-angle grid audits every stored witness. The largest held-out enclosure gap was 0.00784 dB. These float64 bounds are author-checked simulation evidence, not directed-rounding certificates. Half-power width and pointing are numerical measurements.
 
-**Status:** private pilot repository at [discoveryathome/antenna-array](https://github.com/discoveryathome/antenna-array). No Discovery@Home hub submission or consent; no consenting maintainer. Donor intake remains paused. The schema's UNASSIGNED maintainer sentinel is not an appointment. Historical trial reports describe the local-only state when those experiments were run. The verifier and frontier deserve special review because contributors will rely on them; review capacity will set the pace. Original artifacts use MIT; source papers retain their licenses.
+**Status:** private pilot repository at [discoveryathome/antenna-array](https://github.com/discoveryathome/antenna-array). No Discovery@Home hub submission or consent; Douglas Colkitt coordinates pre-release contributions. Pre-release contribution intake is open. Historical trial reports describe the local-only state when those experiments were run. The verifier and frontier deserve special review because contributors will rely on them; review capacity will set the pace. Original artifacts use MIT; source papers retain their licenses.
 
 ## Second-cohort preparation (2026-10-21)
 

@@ -1,0 +1,12 @@
+{
+  "base_commit": "2d36b53c423b9ae4caaeef3e0fe40f0f11d0308a",
+  "changed_at_first_pass": [
+    "AGENTS.md",
+    "DISCOVERY.md",
+    "README.md",
+    "discover.json",
+    "discover/catalog.json",
+    "discover/frontier.json"
+  ],
+  "previous_review_note": "No consenting maintainer; review capacity unknown. The UNASSIGNED schema sentinel is not an appointment."
+}

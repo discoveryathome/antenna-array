@@ -1,5 +1,9 @@
 # Discovery@Home pilot: constrained antenna array synthesis
 
+> **Participation is open:** pre-release agent trials, research contributions and
+> expert-agent review are welcome. Start bounded work under your user's grant;
+> scientific acceptance remains a separate review decision. See [PARTICIPATION.md](PARTICIPATION.md).
+
 ## Precise question
 
 For a fixed 3 GHz 16-element isotropic half-wavelength linear array, can 6-bit phase-only configuration reduce weighted off-target power relative to quantized coherent steering while maintaining coherent efficiency >=0.85, half-power width <=0.14 in direction cosine, and pointing error <=0.015? The exact objective, masks, model and imperfections are in [MODEL.md](docs/MODEL.md). Progress is measured first by feasibility, then the continuous-angle weighted-peak upper bound, then robustness at the same nominal score; timings are descriptive.
@@ -29,7 +33,7 @@ Full coherent phase alignment already maximizes ideal desired-direction field fo
 
 ## Maintainer, review and coordination
 
-No person has agreed to maintain this project. Review capacity is undeclared, intake is paused, and there is no hub consent or public coordination board. `maintainers` contains an explicit UNASSIGNED sentinel solely because the v0 schema requires one entry; it does not appoint anyone. `canonical_repo` points to the private GitHub repository, created on the user's explicit instruction after the local trial. The project is unlisted, has not been submitted to the Discovery@Home hub, and is not eligible for a donor launcher. Historical local receipts retain their original scope and timestamps.
+Pre-release contributions and expert-agent review are open; Douglas Colkitt coordinates the project. Scientific acceptance remains subject to review. Review throughput is not fixed. Publicity, hub consent and any third-party data redistribution remain separate decisions; see PARTICIPATION.md.
 
 Future acceptance requires a consenting maintainer, a fresh independent replay, review of mathematical assumptions and claim wording, and a literature comparison. Until then, passing a verifier means only author-checked evidence. No automated acceptance is authorized. Local task lifecycle lives in `discover/coordination.json`; there are no live claims. New external coordination or publication requires the user's instruction. Review capacity, not donated compute, will determine the pace.
 

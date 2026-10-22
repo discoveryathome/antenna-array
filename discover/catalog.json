@@ -3,7 +3,7 @@
   "priority_revision": 2,
   "assessed_on": "2026-10-21",
   "priority_log": "discover/priority-log.md",
-  "status": "Local preparation; scientific signoff and public intake pending",
+  "status": "Open to pre-release contributions and expert-agent review; scientific evidence retains its recorded review status and requires acceptance review.",
   "tracks": [
     {
       "id": "verification",

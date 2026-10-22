@@ -1,0 +1,892 @@
+{
+  "schema": "discover-catalog/v0",
+  "priority_revision": 2,
+  "assessed_on": "2026-10-21",
+  "priority_log": "discover/priority-log.md",
+  "status": "Local preparation; scientific signoff and public intake pending",
+  "tracks": [
+    {
+      "id": "verification",
+      "weight": 20,
+      "useful_outcome": "Can directed rounding or interval arithmetic turn the peak enclosure into a rigorous numerical certificate?",
+      "tasks": [
+        {
+          "id": "verification-01",
+          "question": "Can directed rounding or interval arithmetic turn the peak enclosure into a rigorous numerical certificate?",
+          "starting_points": [
+            "docs/MODEL.md",
+            "docs/RESULTS.md",
+            "docs/LITERATURE.md"
+          ],
+          "methods": [
+            "interval arithmetic",
+            "analytical curvature bounds",
+            "adversarial aliasing tests"
+          ],
+          "acceptance_gate": "Reproducible evidence under an explicit model; independent review pending; do not alter frozen test results. No hardware or novelty claim without separate evidence.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.check",
+              "--section",
+              "numerical"
+            ],
+            "expected": "PASS numerical for all 72 constructions and uniform-theta audits"
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck-and-tracks",
+          "claim_kind": [
+            "model"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "replication",
+      "weight": 15,
+      "useful_outcome": "Can an independent implementation reproduce the known uniform result and the local phase witnesses?",
+      "tasks": [
+        {
+          "id": "replication-01",
+          "question": "Can an independent implementation reproduce the known uniform result and the local phase witnesses?",
+          "starting_points": [
+            "docs/MODEL.md",
+            "docs/RESULTS.md",
+            "docs/LITERATURE.md"
+          ],
+          "methods": [
+            "closed-form uniform AF",
+            "independent real sums",
+            "fresh checkout"
+          ],
+          "acceptance_gate": "Reproducible evidence under an explicit model; independent review pending; do not alter frozen test results. No hardware or novelty claim without separate evidence.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.verify",
+              "--row",
+              "dev-broadside__uniform__None"
+            ],
+            "expected": "PASS: 1 witness; uniform coherent eta=1 and fixed-mask SLL about -13.147 dB"
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck-and-tracks",
+          "claim_kind": [
+            "model"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "literature-bounds",
+      "weight": 10,
+      "useful_outcome": "Which modern phase-only or gridless reference provides a comparable relaxation or baseline?",
+      "tasks": [
+        {
+          "id": "literature-bounds-01",
+          "question": "Which modern phase-only or gridless reference provides a comparable relaxation or baseline?",
+          "starting_points": [
+            "docs/MODEL.md",
+            "docs/RESULTS.md",
+            "docs/LITERATURE.md"
+          ],
+          "methods": [
+            "full-text literature audit",
+            "convex relaxation",
+            "manifold comparison"
+          ],
+          "acceptance_gate": "Reproducible evidence under an explicit model; independent review pending; do not alter frozen test results. No hardware or novelty claim without separate evidence.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.check",
+              "--section",
+              "literature"
+            ],
+            "expected": "PASS literature inventory; identify full-text and formulation gaps"
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck-and-tracks",
+          "claim_kind": [
+            "model"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "robust-synthesis",
+      "weight": 55,
+      "useful_outcome": "Can explicit calibration margin improve error-box guarantees without unacceptable nominal suppression loss?",
+      "tasks": [
+        {
+          "id": "fresh-01-nominal",
+          "question": "Improve fresh-01 under the nominal contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-01-nominal",
+              "--candidate",
+              "research/readiness-20261021/fresh-01-nominal.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-01-calibration-margin",
+          "question": "Improve fresh-01 under the calibration-margin contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-01-calibration-margin",
+              "--candidate",
+              "research/readiness-20261021/fresh-01-calibration-margin.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-02-nominal",
+          "question": "Improve fresh-02 under the nominal contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-02-nominal",
+              "--candidate",
+              "research/readiness-20261021/fresh-02-nominal.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-02-calibration-margin",
+          "question": "Improve fresh-02 under the calibration-margin contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-02-calibration-margin",
+              "--candidate",
+              "research/readiness-20261021/fresh-02-calibration-margin.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-03-nominal",
+          "question": "Improve fresh-03 under the nominal contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-03-nominal",
+              "--candidate",
+              "research/readiness-20261021/fresh-03-nominal.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-03-calibration-margin",
+          "question": "Improve fresh-03 under the calibration-margin contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-03-calibration-margin",
+              "--candidate",
+              "research/readiness-20261021/fresh-03-calibration-margin.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-04-nominal",
+          "question": "Improve fresh-04 under the nominal contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-04-nominal",
+              "--candidate",
+              "research/readiness-20261021/fresh-04-nominal.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-04-calibration-margin",
+          "question": "Improve fresh-04 under the calibration-margin contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-04-calibration-margin",
+              "--candidate",
+              "research/readiness-20261021/fresh-04-calibration-margin.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-05-nominal",
+          "question": "Improve fresh-05 under the nominal contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-05-nominal",
+              "--candidate",
+              "research/readiness-20261021/fresh-05-nominal.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-05-calibration-margin",
+          "question": "Improve fresh-05 under the calibration-margin contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-05-calibration-margin",
+              "--candidate",
+              "research/readiness-20261021/fresh-05-calibration-margin.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-06-nominal",
+          "question": "Improve fresh-06 under the nominal contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-06-nominal",
+              "--candidate",
+              "research/readiness-20261021/fresh-06-nominal.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-06-calibration-margin",
+          "question": "Improve fresh-06 under the calibration-margin contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-06-calibration-margin",
+              "--candidate",
+              "research/readiness-20261021/fresh-06-calibration-margin.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-07-nominal",
+          "question": "Improve fresh-07 under the nominal contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-07-nominal",
+              "--candidate",
+              "research/readiness-20261021/fresh-07-nominal.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-07-calibration-margin",
+          "question": "Improve fresh-07 under the calibration-margin contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-07-calibration-margin",
+              "--candidate",
+              "research/readiness-20261021/fresh-07-calibration-margin.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-08-nominal",
+          "question": "Improve fresh-08 under the nominal contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-08-nominal",
+              "--candidate",
+              "research/readiness-20261021/fresh-08-nominal.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-08-calibration-margin",
+          "question": "Improve fresh-08 under the calibration-margin contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-08-calibration-margin",
+              "--candidate",
+              "research/readiness-20261021/fresh-08-calibration-margin.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-09-nominal",
+          "question": "Improve fresh-09 under the nominal contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-09-nominal",
+              "--candidate",
+              "research/readiness-20261021/fresh-09-nominal.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-09-calibration-margin",
+          "question": "Improve fresh-09 under the calibration-margin contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-09-calibration-margin",
+              "--candidate",
+              "research/readiness-20261021/fresh-09-calibration-margin.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-10-nominal",
+          "question": "Improve fresh-10 under the nominal contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-10-nominal",
+              "--candidate",
+              "research/readiness-20261021/fresh-10-nominal.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-10-calibration-margin",
+          "question": "Improve fresh-10 under the calibration-margin contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-10-calibration-margin",
+              "--candidate",
+              "research/readiness-20261021/fresh-10-calibration-margin.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-11-nominal",
+          "question": "Improve fresh-11 under the nominal contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-11-nominal",
+              "--candidate",
+              "research/readiness-20261021/fresh-11-nominal.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-11-calibration-margin",
+          "question": "Improve fresh-11 under the calibration-margin contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-11-calibration-margin",
+              "--candidate",
+              "research/readiness-20261021/fresh-11-calibration-margin.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-12-nominal",
+          "question": "Improve fresh-12 under the nominal contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-12-nominal",
+              "--candidate",
+              "research/readiness-20261021/fresh-12-nominal.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        },
+        {
+          "id": "fresh-12-calibration-margin",
+          "question": "Improve fresh-12 under the calibration-margin contract.",
+          "starting_points": [
+            "research/readiness-20261021/README.md",
+            "src/readiness.py",
+            "research/readiness-20261021/portfolio.json"
+          ],
+          "methods": [
+            "Bounded experiment from inherited witness; retain all results and exact provenance"
+          ],
+          "acceptance_gate": "Same hardware/model and feasible witness; candidate upper peak below inherited lower peak. Calibration track also meets the coherent-efficiency bound >=0.85. No hardware claim.",
+          "first_step": {
+            "command": [
+              "python",
+              "-m",
+              "src.readiness",
+              "check",
+              "--task",
+              "fresh-12-calibration-margin",
+              "--candidate",
+              "research/readiness-20261021/fresh-12-calibration-margin.json"
+            ],
+            "expected": "Positive control passes; independent scientific review remains pending."
+          },
+          "bottleneck_link": "research/readiness-20261021/REVIEW.md",
+          "claim_kind": [
+            "model",
+            "measured"
+          ],
+          "first_experiment": "Spend at most 30 minutes on one scoped experiment; reserve the final 10 minutes for checking and a reproducible local handoff."
+        }
+      ]
+    }
+  ]
+}

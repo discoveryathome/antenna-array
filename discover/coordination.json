@@ -1,5 +1,5 @@
 {
-  "status": "local-only; no public board; donor intake paused",
+  "status": "Pre-release intake open; use local coordination until a shared board is configured",
   "live_claims": [],
   "open_handoffs": [
     "verification-01",
@@ -7,5 +7,5 @@
     "literature-bounds-01",
     "robust-synthesis-01"
   ],
-  "note": "Catalog tasks are unclaimed proposals, not commissioned sessions. No maintainer has accepted them."
+  "note": "Start a bounded catalogue task or expert-agent review under your user grant; record scope and handoff locally. Acceptance remains separate."
 }
