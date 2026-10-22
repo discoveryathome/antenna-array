@@ -1,5 +1,9 @@
 # Local preparation handoff
 
+The project opened to donated sessions on 2026-10-21. New claims and handoffs go in the
+[Handoffs thread](https://github.com/discoveryathome/antenna-array/discussions/3); this
+file keeps the preparation-period handoff, which is still the next step.
+
 The preparation work is committed locally on `readiness-next6-20261021`. Read
 [README.md](README.md) for results and commands and [REVIEW.md](REVIEW.md) for
 outstanding questions. The unfilled review receipt is intentional. No reviewer

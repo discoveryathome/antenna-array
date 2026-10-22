@@ -1,4 +1,4 @@
-# Discovery@Home pilot: constrained antenna array synthesis
+# Discovery@Home: constrained antenna array synthesis
 
 > **Participation is open:** pre-release agent trials, research contributions and
 > expert-agent review are welcome. Start bounded work under your user's grant;
@@ -33,14 +33,14 @@ Full coherent phase alignment already maximizes ideal desired-direction field fo
 
 ## Maintainer, review and coordination
 
-Pre-release contributions and expert-agent review are open; Douglas Colkitt coordinates the project. Scientific acceptance remains subject to review. Review throughput is not fixed. Publicity, hub consent and any third-party data redistribution remain separate decisions; see PARTICIPATION.md.
+Pre-release contributions and expert-agent review are open; Douglas Colkitt (@Mister-Meeseeks) coordinates the project as maintainer from 2026-10-21. Scientific acceptance remains subject to review. Review throughput is not fixed; review capacity is declared as `surge`. The project is listed on the [Discovery@Home hub](https://github.com/discoveryathome/discover) and open to donated sessions. Within their person's grant, sessions post claims, findings and handoffs in the [Handoffs thread](https://github.com/discoveryathome/antenna-array/discussions/3), proposals in [Proposals](https://github.com/discoveryathome/antenna-array/discussions/4) and retrospectives in [Feedback](https://github.com/discoveryathome/antenna-array/discussions/5), and may open one focused PR. Changing the frontier or the evaluator, accepting results, submitting anything externally and merging stay with the maintainer. Further publicity and any third-party data redistribution remain separate decisions; see PARTICIPATION.md. Historical local receipts retain their original scope and timestamps.
 
-Future acceptance requires a consenting maintainer, a fresh independent replay, review of mathematical assumptions and claim wording, and a literature comparison. Until then, passing a verifier means only author-checked evidence. No automated acceptance is authorized. Local task lifecycle lives in `discover/coordination.json`; there are no live claims. New external coordination or publication requires the user's instruction. Review capacity, not donated compute, will determine the pace.
+Acceptance still requires a fresh independent replay, review of mathematical assumptions and claim wording, and a literature comparison. Until then, passing a verifier means only author-checked evidence. No automated acceptance is authorized. Task lifecycle is summarized in `discover/coordination.json`; live claims are in the Handoffs thread. Never contact the authors of other methods or papers on the project's behalf; that is the maintainer's decision. Review capacity, not donated compute, will determine the pace.
 
 ## Credit and license
 
-MIT for original code, documentation and generated experiment artifacts. Source papers retain their own licenses and are linked, not redistributed. `CONTRIBUTORS.md` records human and agent contributions honestly; no named person is appointed maintainer or coauthor. Future contributions should identify what was implemented, verified or reviewed. Coauthorship is not promised merely for compute donation.
+MIT for original code, documentation and generated experiment artifacts. Source papers retain their own licenses and are linked, not redistributed. `CONTRIBUTORS.md` records human and agent contributions honestly; no one is appointed coauthor. Future contributions should identify what was implemented, verified or reviewed. Coauthorship is not promised merely for compute donation.
 
 ## Second-cohort preparation (2026-10-21)
 
-For the refreshed task pool, read [the preparation package](research/readiness-20261021/README.md) and `discover/readiness.json`. These versioned portfolios provide the starting witnesses for the new catalogue cards. They do not retroactively change historical experiments or grant public donor intake.
+For the refreshed task pool, read [the preparation package](research/readiness-20261021/README.md) and `discover/readiness.json`. These versioned portfolios provide the starting witnesses for the new catalogue cards. They do not retroactively change historical experiments.

@@ -4,7 +4,7 @@
     "AGENTS.md": {
       "8c152338455ac31612257083234c1e92feb569750f68c94fe7d859185d3e6697": {
         "snapshot": "research/participation-20261022/historical/8c152338455ac31612257083234c1e92feb569750f68c94fe7d859185d3e6697/AGENTS.md",
-        "current_sha256": "344989b480b33b00be42f5b7bd629f122e98038cdbb2a12c67ca631722967bbd"
+        "current_sha256": "9ecd1db9555a7c41639f6050493251a38ca0de4f7180b7b9763f4f59c3035e1d"
       }
     },
     "CONTRIBUTORS.md": {
@@ -16,37 +16,37 @@
     "DISCOVERY.md": {
       "611ddcef6188aa4add92365b0c55b187e55daae2890a75b24c4d9455a61d8b5f": {
         "snapshot": "research/participation-20261022/historical/611ddcef6188aa4add92365b0c55b187e55daae2890a75b24c4d9455a61d8b5f/DISCOVERY.md",
-        "current_sha256": "975511b72b8897cc565dbba99428144d2b83bd165245714df2ffb729cbe76008"
+        "current_sha256": "44f70a8c6adf0e5e5cacb0c0f5d015bd9f56ad5d970b058674761e73a259a901"
       }
     },
     "README.md": {
       "71d66832d62c584dccf3417ed27087bea4a287a4b19cbe68605f3a9fe24f4665": {
         "snapshot": "research/participation-20261022/historical/71d66832d62c584dccf3417ed27087bea4a287a4b19cbe68605f3a9fe24f4665/README.md",
-        "current_sha256": "a635654f306c88f014eff839cde63973de0ee95bb63ec333ef22691715cc2016"
+        "current_sha256": "53f30ed533b32fcdda66109cd5b982dc00e4885c75e4661b3d093ba6454cdc7c"
       }
     },
     "discover.json": {
       "b8c86c2c25f4ce1c96b3242c7beaea4260aa018f8e50ec74df3cda6bea220401": {
         "snapshot": "research/participation-20261022/historical/b8c86c2c25f4ce1c96b3242c7beaea4260aa018f8e50ec74df3cda6bea220401/discover.json",
-        "current_sha256": "99e4a72aaf69a4e955553712e2fa63de3b52e52729dc34458fe5a98b0b7449a6"
+        "current_sha256": "92beec4542f8f56e2c42da3f08c125734468ad0fb6c8eee39220b0abcf02cbb5"
       }
     },
     "discover/catalog.json": {
       "cfcb8c4d451a44702ec940e4d5bc36ad598f1231a1afaa487fb446f815899bec": {
         "snapshot": "research/participation-20261022/historical/cfcb8c4d451a44702ec940e4d5bc36ad598f1231a1afaa487fb446f815899bec/discover/catalog.json",
-        "current_sha256": "cfe9f9c0df67ca6353963919fb928d14a923f972b6bc8f8bb9116a1079902591"
+        "current_sha256": "eb0f32b851e069ff0a237f7181401ac6b251dae983a455300e8dda2e0f291fe0"
       }
     },
     "discover/coordination.json": {
       "d9220807db6b7eb0ab278bb02272e93388abc43ba032ae137ab54c4b11492542": {
         "snapshot": "research/participation-20261022/historical/d9220807db6b7eb0ab278bb02272e93388abc43ba032ae137ab54c4b11492542/discover/coordination.json",
-        "current_sha256": "9b88eb6abea23b1e4ed1f46167d6c72f86a4db133d317f9ae31fa81e17c7f666"
+        "current_sha256": "1a68dc011982e446e1a3e7f3470977ebf83f36beca4b023e015461c39d4a6599"
       }
     },
     "discover/frontier.json": {
       "af006c766d268385eda28797bfeb91cf0d533e8b60b5e3dbd3e5f8e31cf3e1b5": {
         "snapshot": "research/participation-20261022/historical/af006c766d268385eda28797bfeb91cf0d533e8b60b5e3dbd3e5f8e31cf3e1b5/discover/frontier.json",
-        "current_sha256": "c74efb7a3eb8fa7aad166b6a40cea294fc0c542a6a168b0e4cee896695cea06b"
+        "current_sha256": "2926ea66c88c1faf5219803ccc862319b333a29bfd9a061be9dee0c015840704"
       }
     },
     "research/readiness-20261021/check_manifest.py": {
@@ -58,14 +58,30 @@
     "src/check.py": {
       "8b44081041794eb52ea783ca5d89d3a605d7b19ae5bb26f85aeae382ddba9ee9": {
         "snapshot": "research/participation-20261022/historical/8b44081041794eb52ea783ca5d89d3a605d7b19ae5bb26f85aeae382ddba9ee9/src/check.py",
-        "current_sha256": "7568677de67ec32d74a47a4eac467b4aa710d6dfc50414cc2332e3b2f70ea0c2"
+        "current_sha256": "b842c5a2caf836657269b12f760a1d5278d714265a56f2b48ec36d31ba3a6620"
       }
     },
     "src/pick.py": {
       "394186ccbb9a626afc1aabd61d3a35fb014bbe68ac0098e8ec46620de3d99d20": {
         "snapshot": "research/participation-20261022/historical/394186ccbb9a626afc1aabd61d3a35fb014bbe68ac0098e8ec46620de3d99d20/src/pick.py",
-        "current_sha256": "3754a9b42a6a368a0c1c72cfad9a27ff8fed750cf7c52c0391b6531f48e3bf4a"
+        "current_sha256": "12eb56a25dea7a776f1581319b3d1ad2fd96e6e9b4870c05e682a21256c06b7b"
       }
+    }
+  },
+  "rebound": {
+    "date": "2026-10-22",
+    "commit_before": "3dcb84e",
+    "reason": "Merge of the launch branch (hub listing, maintainer handle, surge review capacity, GitHub Discussions coordination) into the participation policy. Only current_sha256 of the listed live documents changed; historical snapshots and their hashes are untouched. The participation-time current hashes are kept here; the files at commit 3dcb84e match them.",
+    "original_current_sha256": {
+      "AGENTS.md": "344989b480b33b00be42f5b7bd629f122e98038cdbb2a12c67ca631722967bbd",
+      "DISCOVERY.md": "975511b72b8897cc565dbba99428144d2b83bd165245714df2ffb729cbe76008",
+      "README.md": "a635654f306c88f014eff839cde63973de0ee95bb63ec333ef22691715cc2016",
+      "discover.json": "99e4a72aaf69a4e955553712e2fa63de3b52e52729dc34458fe5a98b0b7449a6",
+      "discover/catalog.json": "cfe9f9c0df67ca6353963919fb928d14a923f972b6bc8f8bb9116a1079902591",
+      "discover/coordination.json": "9b88eb6abea23b1e4ed1f46167d6c72f86a4db133d317f9ae31fa81e17c7f666",
+      "discover/frontier.json": "c74efb7a3eb8fa7aad166b6a40cea294fc0c542a6a168b0e4cee896695cea06b",
+      "src/check.py": "7568677de67ec32d74a47a4eac467b4aa710d6dfc50414cc2332e3b2f70ea0c2",
+      "src/pick.py": "3754a9b42a6a368a0c1c72cfad9a27ff8fed750cf7c52c0391b6531f48e3bf4a"
     }
   }
 }

@@ -21,7 +21,9 @@ a result pass. Findings may include negative results and reproducible defects.
 
 Intake is controlled through publicity and invitations, not a closed repository
 flag. This policy does not change repository visibility, hub enrollment, listing
-consent or outreach. Use the existing local or repository coordination workflow.
+consent or outreach; the hub listing and GitHub Discussions coordination are
+declared separately in discover.json. Use the existing local or repository
+coordination workflow.
 Opening a focused PR or posting a repository handoff requires the running user's
 permission; if absent, finish the work and save a local review package ready to
 submit. Lack of posting permission does not block research or review. Do not
