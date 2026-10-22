@@ -1,0 +1,386 @@
+{
+  "evidence_level": "author-checked",
+  "replay": "exact rows and attempted-score replay passed",
+  "official": {
+    "metrics": {
+      "target_power": 0.8971294690023989,
+      "coherent_efficiency": 0.8971294690023989,
+      "main_region_power_fraction": 0.8464974814200501,
+      "directivity_target": 14.354071504038382,
+      "sidelobe_db_lower": -11.847809081728244,
+      "sidelobe_db_upper": -11.847653931542588,
+      "notch_db_lower": -23.271671575243733,
+      "notch_db_upper": -23.269519228551395,
+      "score_lower": 0.07532737355711602,
+      "score_upper": 0.07536471476506801,
+      "weighted_peak_db_lower": -11.230471748684486,
+      "weighted_peak_db_upper": -11.22831940199215,
+      "hpbw_u": 0.11325190844164926,
+      "hpbw_deg": 6.57140215692973,
+      "peak_u": -0.15421565058396539,
+      "pointing_error_u": 0.009273590738185261,
+      "main_peak_power_upper": 0.9128525851829977,
+      "peak_enclosure_gap_db": 0.0021523466923364805,
+      "feasible": true
+    },
+    "efficiency_error_box_lower": 0.8508185234179733,
+    "established_improvement": true
+  },
+  "comparisons": [
+    {
+      "id": "fresh-05__margin-hybrid__905",
+      "official": {
+        "target_power": 0.903040890410922,
+        "coherent_efficiency": 0.903040890410922,
+        "main_region_power_fraction": 0.8475498306814915,
+        "directivity_target": 14.448654246574751,
+        "sidelobe_db_lower": -11.59941073021606,
+        "sidelobe_db_upper": -11.599265163980714,
+        "notch_db_lower": -22.965614071885483,
+        "notch_db_upper": -22.96362127900972,
+        "score_lower": 0.08082739377068339,
+        "score_upper": 0.0808644905383022,
+        "weighted_peak_db_lower": -10.924414245326233,
+        "weighted_peak_db_upper": -10.92242145245047,
+        "hpbw_u": 0.11317173100407116,
+        "hpbw_deg": 6.568135144038527,
+        "peak_u": -0.15546955922666225,
+        "pointing_error_u": 0.008019682095488395,
+        "main_peak_power_upper": 0.9148580570040079,
+        "peak_enclosure_gap_db": 0.0019927928757627524,
+        "feasible": true
+      },
+      "alternate": {
+        "desired_power": 0.9030408904109225,
+        "regions": [
+          {
+            "region": "side-left",
+            "stationary_roots": 11,
+            "sampled_max": 0.031060057284279304,
+            "numerical_peak": 0.03106005740262014,
+            "peak_u": -0.7008764651674532,
+            "weighted_score": 0.034394962323894857
+          },
+          {
+            "region": "side-right",
+            "stationary_roots": 14,
+            "sampled_max": 0.06248383707968852,
+            "numerical_peak": 0.06248383736526521,
+            "peak_u": 0.031796566100656634,
+            "weighted_score": 0.06919269994167415
+          },
+          {
+            "region": "notch-0",
+            "stationary_roots": 2,
+            "sampled_max": 0.004561902602517011,
+            "numerical_peak": 0.004561902602517011,
+            "peak_u": -0.5049920925209749,
+            "weighted_score": 0.08082739377068338
+          },
+          {
+            "region": "notch-1",
+            "stationary_roots": 1,
+            "sampled_max": 0.0045052337176251685,
+            "numerical_peak": 0.0045052337176251685,
+            "peak_u": 0.17801360987667353,
+            "weighted_score": 0.07982333939407936
+          }
+        ],
+        "score": 0.08082739377068338,
+        "weighted_peak_db": -10.924414245326235
+      }
+    },
+    {
+      "id": "fresh-05__inherited-slack-singles__35ab2889",
+      "official": {
+        "target_power": 0.903040890410922,
+        "coherent_efficiency": 0.903040890410922,
+        "main_region_power_fraction": 0.8475498306814915,
+        "directivity_target": 14.448654246574751,
+        "sidelobe_db_lower": -11.59941073021606,
+        "sidelobe_db_upper": -11.599265163980714,
+        "notch_db_lower": -22.965614071885483,
+        "notch_db_upper": -22.96362127900972,
+        "score_lower": 0.08082739377068339,
+        "score_upper": 0.0808644905383022,
+        "weighted_peak_db_lower": -10.924414245326233,
+        "weighted_peak_db_upper": -10.92242145245047,
+        "hpbw_u": 0.11317173100407116,
+        "hpbw_deg": 6.568135144038527,
+        "peak_u": -0.15546955922666225,
+        "pointing_error_u": 0.008019682095488395,
+        "main_peak_power_upper": 0.9148580570040079,
+        "peak_enclosure_gap_db": 0.0019927928757627524,
+        "feasible": true
+      },
+      "alternate": {
+        "desired_power": 0.9030408904109225,
+        "regions": [
+          {
+            "region": "side-left",
+            "stationary_roots": 11,
+            "sampled_max": 0.031060057284279304,
+            "numerical_peak": 0.03106005740262014,
+            "peak_u": -0.7008764651674532,
+            "weighted_score": 0.034394962323894857
+          },
+          {
+            "region": "side-right",
+            "stationary_roots": 14,
+            "sampled_max": 0.06248383707968852,
+            "numerical_peak": 0.06248383736526521,
+            "peak_u": 0.031796566100656634,
+            "weighted_score": 0.06919269994167415
+          },
+          {
+            "region": "notch-0",
+            "stationary_roots": 2,
+            "sampled_max": 0.004561902602517011,
+            "numerical_peak": 0.004561902602517011,
+            "peak_u": -0.5049920925209749,
+            "weighted_score": 0.08082739377068338
+          },
+          {
+            "region": "notch-1",
+            "stationary_roots": 1,
+            "sampled_max": 0.0045052337176251685,
+            "numerical_peak": 0.0045052337176251685,
+            "peak_u": 0.17801360987667353,
+            "weighted_score": 0.07982333939407936
+          }
+        ],
+        "score": 0.08082739377068338,
+        "weighted_peak_db": -10.924414245326235
+      }
+    },
+    {
+      "id": "fresh-05__inherited-slack-pairs__35ab2889",
+      "official": {
+        "target_power": 0.9027728276244904,
+        "coherent_efficiency": 0.9027728276244904,
+        "main_region_power_fraction": 0.8469066352352043,
+        "directivity_target": 14.444365241991846,
+        "sidelobe_db_lower": -11.342035648615953,
+        "sidelobe_db_upper": -11.341898417531267,
+        "notch_db_lower": -23.017646339426598,
+        "notch_db_upper": -23.015628934416302,
+        "score_lower": 0.07986478901952926,
+        "score_upper": 0.079901896802392,
+        "weighted_peak_db_lower": -10.976446512867346,
+        "weighted_peak_db_upper": -10.974429107857055,
+        "hpbw_u": 0.11319863281745329,
+        "hpbw_deg": 6.570138850401535,
+        "peak_u": -0.1558316367558373,
+        "pointing_error_u": 0.007657604566313342,
+        "main_peak_power_upper": 0.9135325358917749,
+        "peak_enclosure_gap_db": 0.002017405010291187,
+        "feasible": true
+      },
+      "alternate": {
+        "desired_power": 0.9027728276244908,
+        "regions": [
+          {
+            "region": "side-left",
+            "stationary_roots": 11,
+            "sampled_max": 0.03142066589501879,
+            "numerical_peak": 0.031420666012532426,
+            "peak_u": -0.7023156996658187,
+            "weighted_score": 0.034804620886974544
+          },
+          {
+            "region": "side-right",
+            "stationary_roots": 14,
+            "sampled_max": 0.06627887757296448,
+            "numerical_peak": 0.06627887760198013,
+            "peak_u": 0.03151370640968359,
+            "weighted_score": 0.07341700544574752
+          },
+          {
+            "region": "notch-0",
+            "stationary_roots": 2,
+            "sampled_max": 0.0045062548183708775,
+            "numerical_peak": 0.004506254818468056,
+            "peak_u": -0.5755977311848233,
+            "weighted_score": 0.07986513870295506
+          },
+          {
+            "region": "notch-1",
+            "stationary_roots": 1,
+            "sampled_max": 0.004436143326254721,
+            "numerical_peak": 0.004436143326254721,
+            "peak_u": 0.17801360987667353,
+            "weighted_score": 0.078622540519794
+          }
+        ],
+        "score": 0.07986513870295506,
+        "weighted_peak_db": -10.976427497572667
+      }
+    },
+    {
+      "id": "fresh-05__contract-floor-singles__35ab2889",
+      "official": {
+        "target_power": 0.8972241598358579,
+        "coherent_efficiency": 0.8972241598358579,
+        "main_region_power_fraction": 0.8447754860890373,
+        "directivity_target": 14.355586557373726,
+        "sidelobe_db_lower": -11.522865599063309,
+        "sidelobe_db_upper": -11.52272164873008,
+        "notch_db_lower": -22.998178645755587,
+        "notch_db_upper": -22.996157844163925,
+        "score_lower": 0.08022359468313907,
+        "score_upper": 0.08026093195019171,
+        "weighted_peak_db_lower": -10.956978819196337,
+        "weighted_peak_db_upper": -10.954958017604676,
+        "hpbw_u": 0.11327893702165474,
+        "hpbw_deg": 6.573759933978548,
+        "peak_u": -0.15487805170949054,
+        "pointing_error_u": 0.008611189612660108,
+        "main_peak_power_upper": 0.9107530446825088,
+        "peak_enclosure_gap_db": 0.002020801591659998,
+        "feasible": true
+      },
+      "alternate": {
+        "desired_power": 0.8972241598358585,
+        "regions": [
+          {
+            "region": "side-left",
+            "stationary_roots": 11,
+            "sampled_max": 0.033136686394933654,
+            "numerical_peak": 0.03313668646340707,
+            "peak_u": -0.7002592489058307,
+            "weighted_score": 0.03693245004622838
+          },
+          {
+            "region": "side-right",
+            "stationary_roots": 14,
+            "sampled_max": 0.06318510891929119,
+            "numerical_peak": 0.06318510905259721,
+            "peak_u": 0.03263680049352589,
+            "weighted_score": 0.0704228796783142
+          },
+          {
+            "region": "notch-0",
+            "stationary_roots": 2,
+            "sampled_max": 0.004498661666869984,
+            "numerical_peak": 0.004498661667483487,
+            "peak_u": -0.5739566914443471,
+            "weighted_score": 0.08022363853075894
+          },
+          {
+            "region": "notch-1",
+            "stationary_roots": 1,
+            "sampled_max": 0.00446952972982179,
+            "numerical_peak": 0.00446952972982179,
+            "peak_u": 0.17801360987667353,
+            "weighted_score": 0.07970413512965521
+          }
+        ],
+        "score": 0.08022363853075894,
+        "weighted_peak_db": -10.956976445483937
+      }
+    },
+    {
+      "id": "fresh-05__contract-floor-pairs__35ab2889",
+      "official": {
+        "target_power": 0.8971294690023989,
+        "coherent_efficiency": 0.8971294690023989,
+        "main_region_power_fraction": 0.8464974814200501,
+        "directivity_target": 14.354071504038382,
+        "sidelobe_db_lower": -11.847809081728244,
+        "sidelobe_db_upper": -11.847653931542588,
+        "notch_db_lower": -23.271671575243733,
+        "notch_db_upper": -23.269519228551395,
+        "score_lower": 0.07532737355711602,
+        "score_upper": 0.07536471476506801,
+        "weighted_peak_db_lower": -11.230471748684486,
+        "weighted_peak_db_upper": -11.22831940199215,
+        "hpbw_u": 0.11325190844164926,
+        "hpbw_deg": 6.57140215692973,
+        "peak_u": -0.15421565058396539,
+        "pointing_error_u": 0.009273590738185261,
+        "main_peak_power_upper": 0.9128525851829977,
+        "peak_enclosure_gap_db": 0.0021523466923364805,
+        "feasible": true
+      },
+      "alternate": {
+        "desired_power": 0.8971294690023991,
+        "regions": [
+          {
+            "region": "side-left",
+            "stationary_roots": 11,
+            "sampled_max": 0.03271721509122629,
+            "numerical_peak": 0.03271721527421864,
+            "peak_u": -0.7003679176561676,
+            "weighted_score": 0.03646877781263827
+          },
+          {
+            "region": "side-right",
+            "stationary_roots": 14,
+            "sampled_max": 0.05862383472219394,
+            "numerical_peak": 0.0586238349718305,
+            "peak_u": 0.0330853432953585,
+            "weighted_score": 0.06534601414556111
+          },
+          {
+            "region": "notch-0",
+            "stationary_roots": 2,
+            "sampled_max": 0.00416935973969955,
+            "numerical_peak": 0.00416935973969955,
+            "peak_u": -0.5049920925209749,
+            "weighted_score": 0.07435911776409877
+          },
+          {
+            "region": "notch-1",
+            "stationary_roots": 1,
+            "sampled_max": 0.004223650415040049,
+            "numerical_peak": 0.004223650415040049,
+            "peak_u": 0.2607435375434162,
+            "weighted_score": 0.07532737355711594
+          }
+        ],
+        "score": 0.07532737355711594,
+        "weighted_peak_db": -11.230471748684492
+      }
+    }
+  ],
+  "failure_controls": [
+    {
+      "control": "wrong-target",
+      "rejected": true,
+      "reason": "wrong class/target"
+    },
+    {
+      "control": "nonquantized",
+      "rejected": true,
+      "reason": "phases violate quantization"
+    },
+    {
+      "control": "wrong-amplitude",
+      "rejected": true,
+      "reason": "phase-only amplitudes must equal one"
+    },
+    {
+      "control": "false-metric",
+      "rejected": true,
+      "reason": "wrong claim score_upper"
+    },
+    {
+      "control": "insufficient-margin",
+      "rejected": true,
+      "reason": "coherent-efficiency error-box bound fails"
+    }
+  ],
+  "extended_precision": {
+    "nominal_eta": "0.8971294690023990563",
+    "efficiency_lower": "0.85081852341797344476",
+    "precision_bits": 64,
+    "note": "extended precision rearrangement, not a rounding certificate"
+  },
+  "enclosure_resolved_improvement_db": 0.3039051566659179,
+  "numerical_limitations": [
+    "float64, without directed rounding",
+    "stationary roots found numerically; no completeness proof",
+    "calibration bound covers efficiency, not all perturbed performance metrics"
+  ],
+  "unchanged_scope": "exposed-development fresh-05; ideal isotropic array; no accepted record changes"
+}
