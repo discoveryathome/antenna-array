@@ -3,7 +3,7 @@
   "priority_revision": 2,
   "assessed_on": "2026-10-21",
   "priority_log": "discover/priority-log.md",
-  "status": "Open since 2026-10-21. Robust-synthesis cards start from the second-cohort witnesses; scientific signoff and acceptance stay with the maintainer.",
+  "status": "Open to pre-release contributions and expert-agent review since 2026-10-21; robust-synthesis cards start from the second-cohort witnesses. Scientific evidence retains its recorded review status and requires acceptance review by the maintainer.",
   "tracks": [
     {
       "id": "verification",

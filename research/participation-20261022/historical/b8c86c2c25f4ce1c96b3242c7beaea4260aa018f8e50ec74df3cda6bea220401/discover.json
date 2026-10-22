@@ -1,0 +1,68 @@
+{
+  "schema": "discover/v0",
+  "title": "Quantized phase-only antenna array synthesis",
+  "summary": "Simulation pilot: independently evaluated 16-element 6-bit phase-only beam steering and protected-sector suppression with calibration stress tests. No consenting maintainer; donor intake paused.",
+  "domains": [
+    "electromagnetics",
+    "optimization",
+    "numerical-verification"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "UNASSIGNED \u2014 no consenting maintainer; intake paused"
+    }
+  ],
+  "canonical_repo": "https://github.com/discoveryathome/antenna-array",
+  "entry": {
+    "agents": "AGENTS.md",
+    "project": "DISCOVERY.md",
+    "brief": "README.md"
+  },
+  "frontier": "discover/frontier.json",
+  "catalog": "discover/catalog.json",
+  "priority_log": "discover/priority-log.md",
+  "verification_profile": "simulation",
+  "credit": {
+    "policy": "Credit specific implementations, checks and reviews in CONTRIBUTORS.md by consent; no automatic coauthorship. Agent-authored initial pilot is disclosed.",
+    "kinds": [
+      "contributors-file",
+      "acknowledgement"
+    ]
+  },
+  "session": {
+    "default_minutes": 60,
+    "orient_fraction": 0.2,
+    "verify_fraction": 0.25
+  },
+  "permissions": {
+    "post_messages": false,
+    "open_prs": false,
+    "maintainer_only": [
+      "merge",
+      "change-frontier",
+      "enable-intake",
+      "hub-consent"
+    ]
+  },
+  "review": {
+    "paused": true,
+    "note": "No consenting maintainer; review capacity unknown. The UNASSIGNED schema sentinel is not an appointment."
+  },
+  "picker": {
+    "command": [
+      "python",
+      "-m",
+      "src.pick",
+      "--seed",
+      "{seed}"
+    ]
+  },
+  "requirements": {
+    "ram_gb": 1,
+    "disk_gb": 1,
+    "gpu": "none",
+    "note": "Python 3.14 tested; local venv with pinned binary wheels. Smaller core needs NumPy and SciPy."
+  },
+  "process_changed_on": "2026-10-20"
+}

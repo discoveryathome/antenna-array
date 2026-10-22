@@ -43,9 +43,11 @@ def protocol():
         jsonschema.Draft202012Validator(load(f'discover/schemas/{schema}.schema.json')).validate(load(path))
     assert sum(t['weight'] for t in load('discover/catalog.json')['tracks'])==100
     manifest=load('discover.json')
-    assert not manifest['review'].get('paused') and manifest['maintainers'][0].get('github')
+    assert manifest['review'].get('paused') is not True and manifest['maintainers'][0].get('github')
     assert manifest['coordination']['transport']=='github-discussions'
-    print('PASS protocol schemas, track weights, maintainer and coordination declared')
+    assert any(h['hub']=='discoveryathome/discover' and h['list'] for h in manifest.get('hubs',[]))
+    assert load('PARTICIPATION.json')['intake']=='open'
+    print('PASS protocol schemas, track weights, open pre-release participation, maintainer, hub listing and coordination declared')
 
 
 def literature():

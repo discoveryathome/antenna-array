@@ -1,7 +1,7 @@
 {
   "schema": "discover-frontier/v0",
   "statement": "For each of four frozen held-out masks, the table records the lowest independently evaluated weighted peak upper bound among the locally generated feasible 16-element equal-amplitude 6-bit phase-only candidates. These are model witnesses and best-of-local-portfolio values, not global optima or literature records.",
-  "status": "Open to donated sessions since 2026-10-21; maintainer @Mister-Meeseeks. Author-checked model witnesses; no scientific acceptance yet, which is a maintainer decision.",
+  "status": "Open to pre-release contributions and expert-agent review since 2026-10-21; maintainer @Mister-Meeseeks. Author-checked model witnesses; scientific evidence retains its recorded review status and requires acceptance review.",
   "evidence_level": [
     "author-checked"
   ],

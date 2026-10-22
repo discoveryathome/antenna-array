@@ -3,9 +3,9 @@
   "base": "f2f728e0daccd9cd2c91235304a80f1c5e3d718c",
   "scope": "Preparation source, documents and evidence added/changed in this branch; not all repository contents.",
   "files": {
-    "DISCOVERY.md": "f85bb0fab58de685275d118abbb2892ae3a59c5f1f2df6e2edc9e1e4b695723f",
-    "README.md": "cb1d33de492709e5b3663b80530f403e2046273455c9a17af098bfe5a4ce8d97",
-    "discover/catalog.json": "711e1fb3d80ec859ae639416ea5b188b42d418672591b774ad9d4ba2bd5a9f7b",
+    "DISCOVERY.md": "611ddcef6188aa4add92365b0c55b187e55daae2890a75b24c4d9455a61d8b5f",
+    "README.md": "71d66832d62c584dccf3417ed27087bea4a287a4b19cbe68605f3a9fe24f4665",
+    "discover/catalog.json": "cfcb8c4d451a44702ec940e4d5bc36ad598f1231a1afaa487fb446f815899bec",
     "discover/priority-log.md": "31caacdf30c5fa1347dce1835562e145dcb24c7162e8e902ba42887624a2052b",
     "discover/readiness.json": "935862110e7b70971831744ef4aebf92bde46ae4fdd24108bc676d5b9a02ae03",
     "research/readiness-20261021/HANDOFF.md": "d9fcb8fdb14fa2874c37147960124bc25f5226dd2b01d5c30cf72367d90ab206",
@@ -79,11 +79,8 @@
   "rebound": {
     "date": "2026-10-21",
     "commit_before": "2d36b53",
-    "reason": "Launch to donated sessions: status, maintainer and coordination wording only. The preparation-time hashes of the rebound files are kept here; the files at commit 2d36b53 match them.",
+    "reason": "Launch to donated sessions: status, maintainer and coordination wording only. The preparation-time hashes of the rebound files are kept here; the files at commit 2d36b53 match them. DISCOVERY.md, README.md and discover/catalog.json are bound to their preparation-time hashes again, resolved through research/participation-20261022/snapshots.json (merge of main, 2026-10-22).",
     "original_sha256": {
-      "DISCOVERY.md": "611ddcef6188aa4add92365b0c55b187e55daae2890a75b24c4d9455a61d8b5f",
-      "README.md": "71d66832d62c584dccf3417ed27087bea4a287a4b19cbe68605f3a9fe24f4665",
-      "discover/catalog.json": "cfcb8c4d451a44702ec940e4d5bc36ad598f1231a1afaa487fb446f815899bec",
       "discover/priority-log.md": "9129f41f9021fc6ef3a1340839037f0c01149bae730a306e09238c68146b31ec",
       "discover/readiness.json": "b7861c26f6293c1dd3eeea5adfedb51073d228e8c469d7d92ac819d8ced316f5",
       "research/readiness-20261021/HANDOFF.md": "0806b49aad3c530c7f61441a231b38b263156a4ea978d84ce5ec9fcd0a5c1ffe",

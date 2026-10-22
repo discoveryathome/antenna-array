@@ -1,11 +1,8 @@
-"""Read-only integrity check for the preparation package and changed source files."""
-import hashlib,json
+"""Check original preparation evidence through exact participation snapshots."""
+import importlib.util
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
-package=Path(__file__).resolve().parent
-manifest=json.loads((package/'manifest.json').read_text())
-for name,expected in manifest['files'].items():
-    path=ROOT/name
-    if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest()!=expected:
-        raise ValueError('Preparation binding changed: '+name)
-print('PASS',len(manifest['files']),'preparation file hashes; independent review remains pending')
+spec=importlib.util.spec_from_file_location('participation_history',ROOT/'research/participation-20261022/verify.py')
+history=importlib.util.module_from_spec(spec)
+spec.loader.exec_module(history)
+history.check_manifest(Path(__file__).with_name('manifest.json'))

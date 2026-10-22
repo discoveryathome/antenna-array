@@ -1,0 +1,11 @@
+{
+  "status": "local-only; no public board; donor intake paused",
+  "live_claims": [],
+  "open_handoffs": [
+    "verification-01",
+    "replication-01",
+    "literature-bounds-01",
+    "robust-synthesis-01"
+  ],
+  "note": "Catalog tasks are unclaimed proposals, not commissioned sessions. No maintainer has accepted them."
+}

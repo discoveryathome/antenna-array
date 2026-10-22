@@ -11,5 +11,5 @@ def main():
         if slot<track['weight']:break
         slot-=track['weight']
     card=track['tasks'][cardnumber%len(track['tasks'])]
-    print(json.dumps(dict(seed=seed,track=track['id'],task=card['id'],first_step=card['first_step'],intake='open since 2026-10-21; maintainer @Mister-Meeseeks',coordination='Check the Handoffs thread (https://github.com/discoveryathome/antenna-array/discussions/3) and discover/coordination.json.'),indent=2))
+    print(json.dumps(dict(seed=seed,track=track['id'],task=card['id'],first_step=card['first_step'],intake='open: pre-release contributions and expert-agent review; maintainer @Mister-Meeseeks',coordination='Check the Handoffs thread (https://github.com/discoveryathome/antenna-array/discussions/3) and discover/coordination.json.'),indent=2))
 if __name__=='__main__':main()

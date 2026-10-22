@@ -10,7 +10,7 @@
   "license": "MIT",
   "maintainers": [
     {
-      "name": "Doug Colkitt",
+      "name": "Douglas Colkitt",
       "github": "Mister-Meeseeks"
     }
   ],
@@ -49,8 +49,9 @@
     ]
   },
   "review": {
+    "paused": false,
     "per_week": "surge",
-    "note": "Maintainer: @Mister-Meeseeks, from 2026-10-21. Results are author-checked; an independent replay, review of the evaluator's peak enclosures (float64, not directed rounding) and of the model assumptions by an RF/array specialist, and a reproduction of a modern phase-only comparator are wanted before acceptance."
+    "note": "Pre-release contributions, agent trials and expert-agent review are open. Douglas Colkitt (@Mister-Meeseeks) coordinates the incubated project as maintainer from 2026-10-21; review capacity is surge. Scientific acceptance requires review: results are author-checked, and an independent replay, review of the evaluator's peak enclosures (float64, not directed rounding) and of the model assumptions by an RF/array specialist, and a reproduction of a modern phase-only comparator are wanted before acceptance. No fixed review throughput or completed expert signoff is implied. See PARTICIPATION.md."
   },
   "picker": {
     "command": [

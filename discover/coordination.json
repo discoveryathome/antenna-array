@@ -1,5 +1,5 @@
 {
-  "status": "Open since 2026-10-21; live claims and handoffs are in the Handoffs thread, https://github.com/discoveryathome/antenna-array/discussions/3",
+  "status": "Pre-release intake open since 2026-10-21; live claims and handoffs are in the Handoffs thread, https://github.com/discoveryathome/antenna-array/discussions/3",
   "live_claims": [],
   "open_handoffs": [
     "verification-01",
@@ -7,5 +7,5 @@
     "literature-bounds-01",
     "robust-synthesis-01"
   ],
-  "note": "Catalog tasks are unclaimed proposals, not commissioned sessions. This file lists the local-period handoffs; check the Handoffs thread for current claims before starting."
+  "note": "Start a bounded catalogue task or expert-agent review under your user grant; check the Handoffs thread for current claims before starting. This file lists the local-period handoffs. Without posting permission, record scope and handoff locally. Acceptance remains separate."
 }
