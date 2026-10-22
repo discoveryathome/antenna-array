@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "date": "2026-10-21",
+  "status": "local-preparation; scientific review pending",
+  "package": "research/readiness-20261021/README.md",
+  "portfolio": "research/readiness-20261021/portfolio.json",
+  "first_step": "python -m src.readiness check --task fresh-01-calibration-margin --candidate research/readiness-20261021/fresh-01-calibration-margin.json",
+  "external_gates": [
+    "RF/array specialist review",
+    "Published-case reproduction and hardware-relevant input data",
+    "Independent contributor and numerical replay"
+  ],
+  "preparation_status": "complete for scoped external review",
+  "independent_review": "pending",
+  "integrity_check": "python research/readiness-20261021/check_manifest.py"
+}

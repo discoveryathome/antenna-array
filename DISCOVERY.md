@@ -16,10 +16,10 @@ Run `python -m src.check` and `python -m pytest -q`. The check recomputes constr
 
 The bottleneck is credible comparison and robustness, not a shortage of search heuristics. Four tracks in `discover/catalog.json` sum to 100:
 
-* **Verification (30):** strengthen floating-point bounds and independently check negative controls.
-* **Replication (25):** replay stored designs and optimization with new independent implementations.
-* **Literature and bounds (20):** audit modern gridless/manifold methods and define valid relaxations.
-* **Robust synthesis (25):** optimize with calibration margin and expand untouched targets.
+* **Verification (20):** strengthen floating-point bounds and independently check negative controls.
+* **Replication (15):** replay stored designs and optimization with new independent implementations.
+* **Literature and bounds (10):** audit modern gridless/manifold methods and define valid relaxations.
+* **Robust synthesis (55):** optimize with calibration margin and expand untouched targets.
 
 Each card has a tested positive-control first step. Use the seeded picker rather than choosing the attractive result. No broad geometry search is silently mixed into the fixed-hardware benchmark. Geometry optimization would need a new explicit aperture, minimum spacing, phase and element-pattern contract.
 
@@ -36,3 +36,7 @@ Future acceptance requires a consenting maintainer, a fresh independent replay, 
 ## Credit and license
 
 MIT for original code, documentation and generated experiment artifacts. Source papers retain their own licenses and are linked, not redistributed. `CONTRIBUTORS.md` records human and agent contributions honestly; no named person is appointed maintainer or coauthor. Future contributions should identify what was implemented, verified or reviewed. Coauthorship is not promised merely for compute donation.
+
+## Second-cohort preparation (2026-10-21)
+
+For the refreshed task pool, read [the preparation package](research/readiness-20261021/README.md) and `discover/readiness.json`. These versioned portfolios provide the starting witnesses for the new catalogue cards. They do not retroactively change historical experiments or grant public donor intake.

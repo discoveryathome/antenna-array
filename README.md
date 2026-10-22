@@ -66,3 +66,7 @@ The two intelligent methods are multistart epigraph SLSQP with analytic derivati
 The evaluator uses a grid distinct from the optimizer and a curvature bound to enclose peaks between samples. A separate uniform-angle grid audits every stored witness. The largest held-out enclosure gap was 0.00784 dB. These float64 bounds are author-checked simulation evidence, not directed-rounding certificates. Half-power width and pointing are numerical measurements.
 
 **Status:** private pilot repository at [discoveryathome/antenna-array](https://github.com/discoveryathome/antenna-array). No Discovery@Home hub submission or consent; no consenting maintainer. Donor intake remains paused. The schema's UNASSIGNED maintainer sentinel is not an appointment. Historical trial reports describe the local-only state when those experiments were run. The verifier and frontier deserve special review because contributors will rely on them; review capacity will set the pace. Original artifacts use MIT; source papers retain their licenses.
+
+## Second-cohort preparation (2026-10-21)
+
+See the [prepared contributor portfolio and review package](research/readiness-20261021/README.md). Start new preparation tasks from its inherited witnesses. Historical results remain separately reproducible; independent scientific signoff is pending.

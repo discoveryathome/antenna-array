@@ -1,0 +1,3 @@
+PASS numerical: 72 independent reconstructions and uniform-theta grid audits
+PASS: author-check only; no hardware or global-optimality claim.
+
