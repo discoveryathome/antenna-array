@@ -113,6 +113,13 @@ Author checks, recorded in [verification.json](verification.json):
 - The repository's 13 regression tests pass. `python -m src.check` passes all
   72 stored reconstructions and uniform-angle audits, plus the protocol checks.
 
+The full `src.check` is not an all-pass result on this environment. A later
+fresh-clone recheck of the unchanged base stops at `src/check.py:66`: five stored
+robustness dictionary values differ by one ULP (at most 3.55e-15). The table,
+frontier, summary and artifact-hash checks pass separately. No checker assertion
+or stored robustness value was changed; full robustness replay is not claimed.
+This baseline discrepancy does not change the fresh-05 task-check result above.
+
 The analytic bound applies to every combination of phase errors within +/-2
 degrees, position errors within +/-0.005 wavelength, and relative amplitude
 errors within +/-3%, in the stated ideal model. It covers coherent efficiency
