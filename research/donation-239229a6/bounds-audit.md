@@ -247,4 +247,3 @@ research/readiness-20261021/portfolio.json
 research/readiness-20261021/fresh-08-calibration-margin.json
   3c5820c2d9960eefadf8b69f86ce197d9396bd2e934e4aaa7da6fe917c323080
 ```
-
