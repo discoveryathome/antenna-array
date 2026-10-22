@@ -1,8 +1,9 @@
 # Antenna array synthesis: second-cohort preparation
 
 Local preparation authorized by the project coordinator on 2026-10-21. Evidence is
-**author-checked**; outside scientific review and public intake approval are pending.
-No external contact, hub submission, or new reviewer consent is implied.
+**author-checked**; outside scientific review is pending. The project has been open to
+donated sessions since 2026-10-21 (see `DISCOVERY.md`). No external contact or reviewer
+consent is implied.
 
 ## Prepared work
 

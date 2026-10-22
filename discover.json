@@ -1,7 +1,7 @@
 {
   "schema": "discover/v0",
   "title": "Quantized phase-only antenna array synthesis",
-  "summary": "Simulation pilot: independently evaluated 16-element 6-bit phase-only beam steering and protected-sector suppression with calibration stress tests. No consenting maintainer; donor intake paused.",
+  "summary": "Equal-amplitude, 6-bit phase-only configurations of a fixed 16-element half-wavelength array at 3 GHz that suppress weighted off-target power under gain, beamwidth and pointing constraints, each witness independently re-evaluated with continuous-angle peak enclosures and calibration stress tests. Ideal array-factor model; no hardware claim.",
   "domains": [
     "electromagnetics",
     "optimization",
@@ -10,7 +10,8 @@
   "license": "MIT",
   "maintainers": [
     {
-      "name": "UNASSIGNED \u2014 no consenting maintainer; intake paused"
+      "name": "Doug Colkitt",
+      "github": "Mister-Meeseeks"
     }
   ],
   "canonical_repo": "https://github.com/discoveryathome/antenna-array",
@@ -36,18 +37,20 @@
     "verify_fraction": 0.25
   },
   "permissions": {
-    "post_messages": false,
-    "open_prs": false,
+    "post_messages": true,
+    "open_prs": true,
     "maintainer_only": [
-      "merge",
       "change-frontier",
-      "enable-intake",
-      "hub-consent"
+      "change-evaluator",
+      "accept-results",
+      "submit-upstream",
+      "license",
+      "merge"
     ]
   },
   "review": {
-    "paused": true,
-    "note": "No consenting maintainer; review capacity unknown. The UNASSIGNED schema sentinel is not an appointment."
+    "per_week": "surge",
+    "note": "Maintainer: @Mister-Meeseeks, from 2026-10-21. Results are author-checked; an independent replay, review of the evaluator's peak enclosures (float64, not directed rounding) and of the model assumptions by an RF/array specialist, and a reproduction of a modern phase-only comparator are wanted before acceptance."
   },
   "picker": {
     "command": [
@@ -62,7 +65,23 @@
     "ram_gb": 1,
     "disk_gb": 1,
     "gpu": "none",
-    "note": "Python 3.14 tested; local venv with pinned binary wheels. Smaller core needs NumPy and SciPy."
+    "note": "Python 3.14 tested; NumPy, SciPy and jsonschema from the pinned requirements.lock.txt in a local venv (binary wheels; installing needs network once). CPU only, no GPU; the check takes about a minute."
   },
-  "process_changed_on": "2026-10-20"
+  "process_changed_on": "2026-10-21",
+  "hubs": [
+    {
+      "hub": "discoveryathome/discover",
+      "list": true,
+      "push": []
+    }
+  ],
+  "coordination": {
+    "transport": "github-discussions",
+    "threads": {
+      "start": 2,
+      "handoffs": 3,
+      "proposals": 4,
+      "feedback": 5
+    }
+  }
 }

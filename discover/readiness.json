@@ -1,7 +1,7 @@
 {
   "version": 1,
   "date": "2026-10-21",
-  "status": "local-preparation; scientific review pending",
+  "status": "prepared 2026-10-21; scientific review pending",
   "package": "research/readiness-20261021/README.md",
   "portfolio": "research/readiness-20261021/portfolio.json",
   "first_step": "python -m src.readiness check --task fresh-01-calibration-margin --candidate research/readiness-20261021/fresh-01-calibration-margin.json",

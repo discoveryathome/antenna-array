@@ -7,3 +7,7 @@ Review priorities after an independent replay, before any larger search campaign
 ## 2026-10-21 second-cohort preparation
 
 Task-specific coordinator authorization. Refreshed cards inherit the preparation portfolio; original catalogue archived in research/readiness-20261021/catalog-before.json. Historical results are unchanged. Scientific review and public intake remain pending.
+
+## Launch — 21 October 2026
+
+Donor intake opened with @Mister-Meeseeks as maintainer (review capacity `surge`); coordination moved to GitHub Discussions. Weights unchanged from revision 2 (verification 20, replication 15, literature and bounds 10, robust synthesis 55). The second-cohort witnesses remain starting points until reviewed, and no result is accepted because its checks pass.

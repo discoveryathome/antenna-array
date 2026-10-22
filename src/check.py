@@ -42,9 +42,10 @@ def protocol():
     for path,schema in [('discover.json','manifest'),('discover/frontier.json','frontier'),('discover/catalog.json','catalog')]:
         jsonschema.Draft202012Validator(load(f'discover/schemas/{schema}.schema.json')).validate(load(path))
     assert sum(t['weight'] for t in load('discover/catalog.json')['tracks'])==100
-    assert load('discover.json')['review']['paused']
-    assert not load('discover.json').get('hubs')
-    print('PASS protocol schemas, track weights, local-only paused status')
+    manifest=load('discover.json')
+    assert not manifest['review'].get('paused') and manifest['maintainers'][0].get('github')
+    assert manifest['coordination']['transport']=='github-discussions'
+    print('PASS protocol schemas, track weights, maintainer and coordination declared')
 
 
 def literature():
