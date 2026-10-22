@@ -1,0 +1,62 @@
+{
+  "command": "python -m src.check",
+  "status": "FAIL in existing exact-dictionary equality at src/check.py:66",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.5.4"
+  },
+  "differences": [
+    {
+      "id": "test-right__uniform__None",
+      "metric": "weighted_peak_db_upper",
+      "stored": -1.1770738025875025,
+      "current": -1.1770738025875023,
+      "absolute_difference": 2.220446049250313e-16,
+      "ulps": 1.0
+    },
+    {
+      "id": "test-right__chebyshev30__None",
+      "metric": "notch_db_upper",
+      "stored": -16.97925906542064,
+      "current": -16.979259065420635,
+      "absolute_difference": 3.552713678800501e-15,
+      "ulps": 1.0
+    },
+    {
+      "id": "test-left__uniform__None",
+      "metric": "weighted_peak_db_upper",
+      "stored": -1.986237946208339,
+      "current": -1.9862379462083388,
+      "absolute_difference": 2.220446049250313e-16,
+      "ulps": 1.0
+    },
+    {
+      "id": "test-left__de__1729",
+      "metric": "sidelobe_db_upper",
+      "stored": -9.842019884237473,
+      "current": -9.842019884237471,
+      "absolute_difference": 1.7763568394002505e-15,
+      "ulps": 1.0
+    },
+    {
+      "id": "test-two-notch__de__1729",
+      "metric": "sidelobe_db_upper",
+      "stored": -8.804911143065185,
+      "current": -8.804911143065187,
+      "absolute_difference": 1.7763568394002505e-15,
+      "ulps": 1.0
+    }
+  ],
+  "passed_before_failure": [
+    "72 stored reconstructions and uniform-angle audits",
+    "protocol checks",
+    "literature inventory"
+  ],
+  "separately_checked": "tables(): frontier witnesses, best-of-local-portfolio values, summary and artifact hashes passed",
+  "not_completed": "Full robustness replay; no assertion was relaxed and no stored value was rewritten.",
+  "source_sha256": {
+    "src/check.py": "b842c5a2caf836657269b12f760a1d5278d714265a56f2b48ec36d31ba3a6620",
+    "src/robustness.py": "c1c60c6c14d00f79d56f6139647b5d690f226c5f36a741390f3f9698373588dc",
+    "results/robustness.json": "8976834064b3de1fbdca687ac37668aa0a7c4c8f287ee2de435d4fddc5f62e28"
+  }
+}
